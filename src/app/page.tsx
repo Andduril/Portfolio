@@ -6,9 +6,9 @@ const HomePage = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <main className="relative min-h-screen">
+    <>
       <Background
-        className="absolute size-full"
+        className="size-full"
         gradient={{
           display: true,
           colorStart: 'rgba(0, 125, 100, 0.65)',
@@ -25,12 +25,13 @@ const HomePage = () => {
           display: true,
           color: 'rgba(255, 255, 255, 0.5)',
         }}
-      >
-        <div className="flex items-center justify-center size-full">
-          <h1 className="text-6xl">{t('title')}</h1>
+      />
+      <main className="min-h-screen flex items-center justify-center">
+        <div className="bg-gray-500 p-4 rounded-lg">
+          <h1>{t('title')}</h1>
         </div>
-      </Background>
-    </main>
+      </main>
+    </>
   );
 };
 

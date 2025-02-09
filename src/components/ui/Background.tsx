@@ -1,6 +1,6 @@
 'use client';
 
-import { ComponentPropsWithoutRef, FC, useEffect, useRef, useState } from 'react';
+import { ComponentPropsWithoutRef, FC, useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
@@ -31,20 +31,17 @@ interface BackgroundProps {
   gradient?: GradientProps;
   dots?: DotsProps;
   lines?: LineProps;
-  children?: React.ReactNode;
 }
 
 const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
   gradient = {},
   dots = {},
   lines = {},
-  children,
   className,
   ...props
 }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [smoothPosition, setSmoothPosition] = useState({ x: gradient.x || 0, y: gradient.y || 0 });
-  const backgroundRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (gradient.fixed) {
@@ -52,13 +49,7 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
     }
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (backgroundRef.current) {
-        const rect = backgroundRef.current.getBoundingClientRect();
-        setCursorPosition({
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top,
-        });
-      }
+      setCursorPosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -96,7 +87,7 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
   const dotOffset = dots.radius ? (dots.radius % 2 === 0 ? 0 : 0.5) : 0;
 
   return (
-    <div className={cn('overflow-hidden', className)} ref={backgroundRef} {...props}>
+    <div className={cn('overflow-hidden', className)} {...props}>
       {lines.display && (
         <div
           className="absolute z-[-1] size-full"
@@ -129,7 +120,6 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
           }}
         />
       )}
-      {children}
     </div>
   );
 };
