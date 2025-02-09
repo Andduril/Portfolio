@@ -1,6 +1,10 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import Background from '@/components/ui/Background';
+import Reveal from '@/components/ui/Reveal';
+
+import Guts from '../../public/guts.jpg';
 
 const HomePage = () => {
   const t = useTranslations('HomePage');
@@ -27,9 +31,13 @@ const HomePage = () => {
         }}
       />
       <main className="min-h-screen flex items-center justify-center">
-        <div className="bg-gray-500 p-4 rounded-lg">
-          <h1>{t('title')}</h1>
-        </div>
+        <Reveal duration={1500} trigger>
+          <div className="flex flex-col items-center justify-center gap-8">
+            <Image className="rounded-full" src={Guts} alt="Logo" width={150} height={150} />
+            <h1 className="text-4xl font-bold text-center">{t('title')}</h1>
+            <h2 className="text-2xl font-bold text-center">{t('job')}</h2>
+          </div>
+        </Reveal>
       </main>
     </>
   );
