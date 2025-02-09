@@ -29,6 +29,11 @@ export default async function RootLayout({
 
   const messages = await getMessages();
 
+  // const cookies = await cookies();
+  // const isMobile = cookies.device === 'mobile';
+
+  // console.log('isMobile:', isMobile);
+
   return (
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
