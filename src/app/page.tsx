@@ -1,13 +1,18 @@
+import { headers } from 'next/headers';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import Background from '@/components/ui/Background';
 import Reveal from '@/components/ui/Reveal';
 
 import Guts from '../../public/guts.jpg';
 
-const HomePage = () => {
-  const t = useTranslations('HomePage');
+const HomePage = async () => {
+  const t = await getTranslations('HomePage');
+  const headersList = await headers();
+  const isMobile = headersList.get('user-agent');
+
+  console.log(isMobile);
 
   return (
     <>
