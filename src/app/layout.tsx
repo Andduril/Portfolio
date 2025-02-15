@@ -5,6 +5,8 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
+import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider';
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -29,15 +31,12 @@ export default async function RootLayout({
 
   const messages = await getMessages();
 
-  // const cookies = await cookies();
-  // const isMobile = cookies.device === 'mobile';
-
-  // console.log('isMobile:', isMobile);
-
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
+        <NextIntlClientProvider messages={messages}>
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

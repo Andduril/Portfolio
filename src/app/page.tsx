@@ -2,6 +2,9 @@ import { headers } from 'next/headers';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
+import Section from '@/components/sections/Section';
+import ExperienceBegin from '@/components/sections/transitions/ExperienceBegin';
+import Timeline from '@/components/Timeline';
 import Background from '@/components/ui/Background';
 import BackgroundMobile from '@/components/ui/BackgroundMobile';
 import LanguageLabel from '@/components/ui/LanguageLabel';
@@ -68,29 +71,36 @@ const HomePage = async () => {
           color: 'rgba(255, 255, 255, 0.5)',
         }}
       />
-      <main className="min-h-screen flex items-center justify-center">
-        <Reveal duration={1500} trigger>
-          <div className="flex flex-row items-start gap-14">
-            <div className="flex flex-col items-center justify-center gap-8">
-              <Image className="rounded-full" src={Guts} alt="Logo" width={175} height={175} />
-              <div className="flex flex-row items-center gap-2">
-                <Image src={EarthIcon} alt="Earth" width={20} height={20} />
-                <h1>{t('location')}</h1>
+      <main>
+        <Section className="flex items-center justify-center">
+          <Reveal duration={1500} trigger>
+            <div className="flex flex-row items-start gap-14">
+              <div className="flex flex-col items-center justify-center gap-8">
+                <Image className="rounded-full" src={Guts} alt="Logo" width={175} height={175} />
+                <div className="flex flex-row items-center gap-2">
+                  <Image src={EarthIcon} alt="Earth" width={20} height={20} />
+                  <h1>{t('location')}</h1>
+                </div>
+                <div className="flex flex-row gap-4">
+                  <LanguageLabel>{t('frFlag')}</LanguageLabel>
+                  <LanguageLabel>{t('enFlag')}</LanguageLabel>
+                </div>
+                <LocaleSwitcher />
               </div>
-              <div className="flex flex-row gap-4">
-                <LanguageLabel>{t('frFlag')}</LanguageLabel>
-                <LanguageLabel>{t('enFlag')}</LanguageLabel>
+              <div className="flex flex-col items-start justify-center gap-8 max-w-96 mt-8">
+                <h1 className="text-6xl">{t('title')}</h1>
+                <h2 className="text-2xl">{t('job')}</h2>
+                <p className="text-lg text-justify">{t('about')}</p>
               </div>
-              <LocaleSwitcher />
             </div>
-            <div className="flex flex-col items-start justify-center gap-8 max-w-96 mt-8">
-              <h1 className="text-6xl">{t('title')}</h1>
-              <h2 className="text-2xl">{t('job')}</h2>
-              <p className="text-lg">{t('about')}</p>
-            </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </Section>
+        <ExperienceBegin />
+        <Timeline />
       </main>
+      <footer className="min-h-screen flex flex-col items-center justify-center">
+        <h1>{t('title')}</h1>
+      </footer>
     </>
   );
 };

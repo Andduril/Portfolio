@@ -41,6 +41,7 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
   ...props
 }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 });
   const [smoothPosition, setSmoothPosition] = useState({ x: gradient.x || 0, y: gradient.y || 0 });
 
   useEffect(() => {
@@ -52,9 +53,16 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
 
+    const handleScroll = () => {
+      setScrollPosition({ x: window.scrollX, y: window.scrollY });
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [gradient.fixed]);
 
@@ -67,8 +75,8 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
 
     const updateSmoothPosition = () => {
       setSmoothPosition((prev) => {
-        const dx = cursorPosition.x - prev.x;
-        const dy = cursorPosition.y - prev.y;
+        const dx = cursorPosition.x + scrollPosition.x - prev.x;
+        const dy = cursorPosition.y + scrollPosition.y - prev.y;
         const easingFactor = 0.05;
         return {
           x: prev.x + dx * easingFactor,
@@ -82,7 +90,7 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
     animationId = requestAnimationFrame(updateSmoothPosition);
 
     return () => cancelAnimationFrame(animationId);
-  }, [cursorPosition, gradient.fixed]);
+  }, [cursorPosition, scrollPosition, gradient.fixed]);
 
   const dotOffset = dots.radius ? (dots.radius % 2 === 0 ? 0 : 0.5) : 0;
 
@@ -115,7 +123,7 @@ const Background: FC<BackgroundProps & ComponentPropsWithoutRef<'div'>> = ({
           className="absolute z-[-1] size-full"
           // Place the gradient with the smooth position
           style={{
-            background: `radial-gradient(circle ${gradient.radius || 200}px at ${smoothPosition.x}px ${smoothPosition.y}px, ${gradient.colorStart || 'rgba(255, 0, 0, 0.5)'}, ${gradient.colorEnd || 'rgba(0, 0, 0, 1)'})`,
+            background: `radial-gradient(circle ${gradient.radius || 200}px at ${smoothPosition.x + 'px'} ${smoothPosition.y + 'px'}, ${gradient.colorStart || 'rgba(255, 0, 0, 0.5)'}, ${gradient.colorEnd || 'rgba(0, 0, 0, 1)'})`,
             opacity: gradient.opacity || 0.5,
           }}
         />

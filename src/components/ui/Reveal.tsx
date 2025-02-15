@@ -8,7 +8,7 @@ type RevealProps = {
   trigger?: boolean;
 };
 
-const Reveal: FC<RevealProps> = ({ children, duration, trigger }) => {
+const Reveal: FC<RevealProps> = ({ children, duration = 1000, trigger }) => {
   const [isRevealed, setIsRevealed] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Reveal: FC<RevealProps> = ({ children, duration, trigger }) => {
     <div
       className="transition-all ease-in-out"
       style={{
-        transitionDuration: `${duration || 1000}ms`,
+        transitionDuration: `${duration}ms`,
         maskImage: 'linear-gradient(to right, black 0%, black 25%, transparent 50%)',
         maskSize: '300% 100%',
         maskPosition: `${isRevealed ? '0 0' : '100% 0'}`,
