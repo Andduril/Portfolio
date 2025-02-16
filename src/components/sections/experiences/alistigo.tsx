@@ -1,40 +1,36 @@
 'use client';
 
 import { useGSAP } from '@gsap/react';
-import { ComponentPropsWithoutRef, FC, useRef } from 'react';
+import { ComponentPropsWithoutRef, FC, RefObject, useRef } from 'react';
 
 import gsap from '@/lib/gsapConfig';
 
 import Section from '../Section';
 
-const AlistigoAnimation: FC<ComponentPropsWithoutRef<'section'>> = ({ ...props }) => {
+type AlistigoAnimationProps = {
+  ref: RefObject<HTMLDivElement | null>;
+};
+
+const AlistigoAnimation: FC<ComponentPropsWithoutRef<'section'> & AlistigoAnimationProps> = ({
+  ref,
+  ...props
+}) => {
   const boxRef = useRef<HTMLDivElement>(null);
-  const ref = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ref.current,
-        pin: true,
-        start: 'top middle',
-        end: '+=100%',
-        scrub: true,
-        snap: {
-          snapTo: 'labels',
-          duration: { min: 0.1, max: 0.5 },
-          delay: 0.2,
-          ease: 'power1.inOut',
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ref.current,
+          pin: true,
+          start: 'top middle',
+          end: '+=100%',
+          scrub: true,
         },
-      },
-    });
-
-    tl.addLabel('start')
+      })
       .from(boxRef.current, { x: '-100%', opacity: 0 })
-      .addLabel('color')
       .from(boxRef.current, { backgroundColor: 'blue' })
-      .addLabel('spin')
-      .to(boxRef.current, { rotate: 360 })
-      .addLabel('end');
+      .to(boxRef.current, { rotate: 360 });
   });
 
   return (
