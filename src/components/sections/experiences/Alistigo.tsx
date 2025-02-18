@@ -8,11 +8,11 @@ import gsap from '@/lib/gsapConfig';
 
 import Section from '../Section';
 
-type IsagriProps = {
+type AlistigoProps = {
   ref: RefObject<HTMLDivElement | null>;
 };
 
-const IsagriPart1: FC<IsagriProps> = ({ ref }) => {
+const AlistigoPart1: FC<AlistigoProps> = ({ ref }) => {
   const dotRef = useRef(null);
   const dateRef = useRef(null);
 
@@ -47,19 +47,19 @@ const IsagriPart1: FC<IsagriProps> = ({ ref }) => {
     <Section ref={ref} className="relative flex flex-col">
       {/* Animation*/}
       <Section ref={animationRef} className="relative flex flex-row items-center">
+        <div className="w-1/2"></div>
         <div className="w-1/2 flex flex-col items-center">
           <Reveal trigger={reveal}>
-            <h1 className="text-7xl leading-normal">{'Isagri'}</h1>
+            <h1 className="text-7xl">{'Alistigo'}</h1>
           </Reveal>
         </div>
-        <div className="w-1/2" />
       </Section>
 
       {/* Element absolute */}
-      <div className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row-reverse w-1/5">
+      <div className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row w-1/5">
         <Reveal trigger={reveal}>
           <h3 ref={dateRef} className="text-3xl">
-            {'Sept 2025'}
+            {'mai 2023'}
           </h3>
         </Reveal>
       </div>
@@ -71,7 +71,7 @@ const IsagriPart1: FC<IsagriProps> = ({ ref }) => {
   );
 };
 
-const IsagriPart2: FC<IsagriProps> = ({ ref }) => {
+const AlistigoPart2: FC<AlistigoProps> = ({ ref }) => {
   const squareRef = useRef(null);
 
   useGSAP(() => {
@@ -92,13 +92,13 @@ const IsagriPart2: FC<IsagriProps> = ({ ref }) => {
     <Section ref={ref} className="relative flex flex-col">
       <div
         ref={squareRef}
-        className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 size-14 bg-green-400"
+        className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 size-14 bg-red-400"
       />
     </Section>
   );
 };
 
-const IsagriPart3: FC<IsagriProps> = ({ ref }) => {
+const AlistigoPart3: FC<AlistigoProps> = ({ ref }) => {
   const dotRef = useRef(null);
   const dateRef = useRef(null);
 
@@ -128,10 +128,10 @@ const IsagriPart3: FC<IsagriProps> = ({ ref }) => {
   return (
     <Section ref={ref}>
       {/* Element absolute */}
-      <div className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row-reverse w-1/5">
+      <div className="absolute top-[50vh] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row w-1/5">
         <Reveal trigger={reveal}>
           <h3 ref={dateRef} className="text-3xl">
-            {'Sept 2023'}
+            {'Sept 2022'}
           </h3>
         </Reveal>
       </div>
@@ -143,4 +143,4 @@ const IsagriPart3: FC<IsagriProps> = ({ ref }) => {
   );
 };
 
-export { IsagriPart1, IsagriPart2, IsagriPart3 };
+export { AlistigoPart1, AlistigoPart2, AlistigoPart3 };
