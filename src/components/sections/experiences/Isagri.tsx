@@ -8,7 +8,8 @@ import Card from '@/components/ui/Card';
 import Reveal from '@/components/ui/Reveal';
 import gsap from '@/lib/gsapConfig';
 
-import Gobble from '../../../../public/Gobble_le_squelette.png';
+import AnalysedFields from '../../../../public/Analysed_fields.png';
+import Fields from '../../../../public/Fields.png';
 import IsagriLogo from '../../../../public/isagri.svg';
 import Section from '../Section';
 
@@ -84,7 +85,16 @@ const IsagriPart2: FC<IsagriProps> = ({ ref }) => {
   const scanRef = useRef(null);
   const gobbleMask = useRef(null);
 
+  // Graph
+  const graphContainer = useRef<null | HTMLDivElement>(null);
+
   useGSAP(() => {
+    let graphItems;
+
+    if (graphContainer.current) {
+      graphItems = graphContainer.current.children;
+    }
+
     gsap
       .timeline({
         scrollTrigger: {
@@ -98,19 +108,41 @@ const IsagriPart2: FC<IsagriProps> = ({ ref }) => {
       .from(parcelRef.current, { opacity: 0, duration: 1 }, '<')
       .to(parcelRef.current, { rotateY: 15, rotateZ: -5, rotateX: 5, duration: 3 }, '<')
       .to(scanRef.current, { top: '100%', duration: 5 }, '<')
-      .to(gobbleMask.current, { y: '100%', duration: 5 }, '<');
+      .fromTo(
+        gobbleMask.current,
+        { clipPath: 'inset(0% 0% 0% 0%)' },
+        { clipPath: 'inset(100% 0% 0% 0%)', duration: 5 },
+        '<'
+      )
+      .from(graphContainer.current, { opacity: 0, duration: 1 })
+      .from(graphItems!, { height: 0, duration: 1, stagger: 0.5 }, '<');
+    // .to(gobbleMask.current, { height: '100%', duration: 5 }, '<');
   });
 
   return (
     <Section ref={ref} className="relative flex flex-row">
-      <div className="w-1/2 flex flex-col items-center justify-center">
+      <div className="w-1/2 flex flex-col items-center justify-center relative">
         {/* Parcelle */}
         <div className="perspective-400">
           <div ref={parcelRef} className="relative bg-green-900 w-64 h-96 overflow-hidden">
-            <Image src={Gobble} alt="Goble" layout="fill" objectFit="cover" />
-            <div ref={gobbleMask} className="absolute size-full bg-green-400" />
-            <div ref={scanRef} className="absolute w-full top-0 h-2 bg-blue-400" />
+            <Image src={AnalysedFields} alt="Gobble" layout="fill" objectFit="cover" />
+            <div ref={gobbleMask} className="absolute size-full">
+              <Image src={Fields} alt="Gobble" />
+            </div>
+            <div
+              ref={scanRef}
+              className="absolute w-full top-0 h-2 bg-slate-200 shadow-[0px_0px_29px_18px_rgba(46,241,255,1)]"
+            />
           </div>
+        </div>
+        {/* Graph */}
+        <div
+          ref={graphContainer}
+          className="absolute top-[15%] right-[15%] w-52 h-60 flex flex-row items-end gap-2"
+        >
+          <div className="w-full h-1/4 rounded-md bg-cyan-400 shadow-[0px_0px_18px_2px_rgba(46,241,255,1)]" />
+          <div className="w-full h-1/2 rounded-md bg-cyan-400 shadow-[0px_0px_18px_2px_rgba(46,241,255,1)]" />
+          <div className="w-full h-3/4 rounded-md bg-cyan-400 shadow-[0px_0px_18px_2px_rgba(46,241,255,1)]" />
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center">
@@ -173,3 +205,5 @@ const IsagriPart3: FC<IsagriProps> = ({ ref }) => {
 };
 
 export { IsagriPart1, IsagriPart2, IsagriPart3 };
+
+//     clip-path: inset(100% 0% 0% 0%);
