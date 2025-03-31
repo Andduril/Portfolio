@@ -1,4 +1,11 @@
 {
+  "Navigation": {
+    "mainButton": "Anddy Labrut",
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
   "HomePage": {
     "title": "Anddy Labrut",
     "job": "Full Stack Developer",
@@ -10,5 +17,14 @@
   },
   "Experiences": {
     "title": "My work experiences"
+  },
+  "SkillsPage": {
+    "title": "My skills"
+  },
+  "ProjectsPage": {
+    "title": "My projects"
+  },
+  "ContactPage": {
+    "title": "Contact"
   }
 }

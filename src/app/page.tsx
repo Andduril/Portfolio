@@ -5,7 +5,6 @@ import { getTranslations } from 'next-intl/server';
 import Section from '@/components/sections/Section';
 import ExperienceBegin from '@/components/sections/transitions/ExperienceBegin';
 import Timeline from '@/components/Timeline';
-import Background from '@/components/ui/Background';
 import BackgroundMobile from '@/components/ui/BackgroundMobile';
 import LanguageLabel from '@/components/ui/LanguageLabel';
 import LocaleSwitcher from '@/components/ui/LocaleSwitcher';
@@ -52,27 +51,8 @@ const HomePage = async () => {
 
   return (
     <>
-      <Background
-        className="size-full"
-        gradient={{
-          display: true,
-          colorStart: 'rgba(0, 125, 100, 0.65)',
-          colorEnd: 'rgba(15, 15, 15, 1)',
-          radius: 600,
-          opacity: 1,
-        }}
-        dots={{
-          display: true,
-          color: 'rgba(255, 255, 255, 0.95)',
-          radius: 3,
-        }}
-        lines={{
-          display: true,
-          color: 'rgba(255, 255, 255, 0.5)',
-        }}
-      />
       <main>
-        <Section className="flex items-center justify-center">
+        <Section className="flex items-center justify-center relative">
           <Reveal duration={1500} trigger>
             <div className="flex flex-row items-start gap-14">
               <div className="flex flex-col items-center justify-center gap-8">
