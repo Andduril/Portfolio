@@ -1,8 +1,21 @@
+import { headers } from 'next/headers';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
 const TopBar = async () => {
+  const headersList = await headers();
+  const isMobile = headersList.get('user-agent')?.includes('Mobile');
   const t = await getTranslations('Navigation');
+
+  if (isMobile) {
+    return (
+      <header className="sticky bg-transparent top-0 left-0 w-full z-20">
+        <div className="flex flex-row items-center justify-center bg-yellow-500 p-2">
+          <h5 className="text-2xl text-black">{t('underConstruction')}</h5>
+        </div>
+      </header>
+    );
+  }
 
   return (
     <header className="sticky bg-transparent top-0 left-0 w-full z-20">
