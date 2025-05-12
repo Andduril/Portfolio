@@ -5,7 +5,6 @@ import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import tailwindcss from 'eslint-plugin-tailwindcss';
 import globals from 'globals';
 
 const compat = new FlatCompat({
@@ -49,22 +48,13 @@ const config = [
       'simple-import-sort': simpleImportSort,
     },
     languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+      globals: { ...globals.browser, ...globals.node },
 
       parser: tsParser,
     },
     rules: {
       'prettier/prettier': 'error',
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-        },
-      ],
-      'tailwindcss/classnames-order': 'off',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'react/jsx-no-literals': 'error',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',

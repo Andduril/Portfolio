@@ -74,7 +74,7 @@ const Timeline = () => {
       >
         <div
           ref={progressBarRef}
-          className="size-2 rounded-lg h-full bg-gradient-to-b from-green-500 to-cyan-600"
+          className="size-2 rounded-lg h-full bg-linear-to-b from-green-500 to-cyan-600"
         />
       </div>
 
