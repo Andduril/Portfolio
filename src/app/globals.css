@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@plugin '@xpd/tailwind-3dtransforms';
-
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

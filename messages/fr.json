@@ -1,31 +1,13 @@
 {
-  "Navigation": {
-    "underConstruction": "🚧 Mon portfolio est encore en construction, mais vous pouvez suivre son avancement en direct ici !",
-    "mainButton": "Anddy Labrut",
-    "home": "Accueil",
-    "projects": "Projets",
-    "skills": "Compétences",
-    "contact": "Contact"
+  "header" : {
+    "navigation": {
+      "projects": "Projets",
+      "contact": "Contact"
+    }
   },
-  "HomePage": {
-    "title": "Anddy Labrut",
-    "job": "Développeur Full Stack",
-    "footer": "Larry le malicieux",
-    "frFlag": "🇫🇷 Courant",
-    "enFlag": "🇬🇧 Bon niveau",
-    "location": "Antibes, France",
-    "about": "Anddy est un développeur fullstack basé à Antibes, passionné par la programmation et les technologies qui l'entourent. Issu d'un master MIAGE, il aime explorer les multiples facettes du développement, de l’IoT aux applications web modernes. Toujours curieux et avide d’apprendre, il s’épanouit dans la création de solutions intelligentes et innovantes, où performance et expérience utilisateur se rencontrent."
-  },
-  "Experiences": {
-    "title": "Mes expériences"
-  },
-  "SkillsPage": {
-    "title": "Mes expériences"
-  },
-  "ProjectsPage": {
-    "title": "Mes projets"
-  },
-  "ContactPage": {
-    "title": "Contact"
+  "presentation": {
+    "firstName": "Anddy",
+    "lastName": "Labrut",
+    "title": "Développeur Web Full Stack"
   }
 }

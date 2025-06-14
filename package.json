@@ -10,15 +10,11 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.2",
     "clsx": "^2.1.1",
-    "gsap": "^3.12.7",
-    "lenis": "^1.1.20",
     "next": "^15.2.4",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "resend": "^4.5.1",
     "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
@@ -31,7 +27,6 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
-    "@xpd/tailwind-3dtransforms": "^1.0.3",
     "eslint": "^9",
     "eslint-config-next": "^15.1.6",
     "eslint-config-prettier": "^10.0.1",

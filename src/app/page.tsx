@@ -1,86 +1,49 @@
-import { headers } from 'next/headers';
-import Image from 'next/image';
+import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
 import { getTranslations } from 'next-intl/server';
-
-import Section from '@/components/sections/Section';
-import ExperienceBegin from '@/components/sections/transitions/ExperienceBegin';
-import Timeline from '@/components/Timeline';
-import BackgroundMobile from '@/components/ui/BackgroundMobile';
-import LanguageLabel from '@/components/ui/LanguageLabel';
-import LocaleSwitcher from '@/components/ui/LocaleSwitcher';
-import Reveal from '@/components/ui/Reveal';
-
-import EarthIcon from '../../public/globe.svg';
-import Guts from '../../public/guts.jpg';
+import Image from 'next/image';
 
 const HomePage = async () => {
-  const t = await getTranslations('HomePage');
-  const headersList = await headers();
-  const isMobile = headersList.get('user-agent')?.includes('Mobile');
-
-  if (isMobile) {
-    return (
-      <>
-        <BackgroundMobile
-          gradient={{
-            display: true,
-            colorStart: 'rgba(0, 125, 100, 0.65)',
-            colorEnd: 'rgba(15, 15, 15, 1)',
-            radius: 200,
-            opacity: 1,
-          }}
-          dots={{
-            display: true,
-            color: 'rgba(255, 255, 255, 0.95)',
-            radius: 3,
-          }}
-          lines={{
-            display: true,
-            color: 'rgba(255, 255, 255, 0.5)',
-          }}
-        />
-        <main className="min-h-screen flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center gap-8">
-            <h1>{t('title')}</h1>
-            <h2>{t('job')}</h2>
-          </div>
-        </main>
-      </>
-    );
-  }
+  const t = await getTranslations('presentation');
 
   return (
     <>
-      <main>
-        <Section className="flex items-center justify-center relative">
-          <Reveal duration={1500} trigger>
-            <div className="flex flex-row items-start gap-14">
-              <div className="flex flex-col items-center justify-center gap-8">
-                <Image className="rounded-full" src={Guts} alt="Logo" width={175} height={175} />
-                <div className="flex flex-row items-center gap-2">
-                  <Image src={EarthIcon} alt="Earth" width={20} height={20} />
-                  <h1>{t('location')}</h1>
-                </div>
-                <div className="flex flex-row gap-4">
-                  <LanguageLabel>{t('frFlag')}</LanguageLabel>
-                  <LanguageLabel>{t('enFlag')}</LanguageLabel>
-                </div>
-                <LocaleSwitcher />
-              </div>
-              <div className="flex flex-col items-start justify-center gap-8 max-w-96 mt-8">
-                <h1 className="text-6xl">{t('title')}</h1>
-                <h2 className="text-2xl">{t('job')}</h2>
-                <p className="text-lg text-justify">{t('about')}</p>
-              </div>
-            </div>
-          </Reveal>
-        </Section>
-        <ExperienceBegin />
-        <Timeline />
+      <Header />
+      <main className="pt-20">
+        {/* Presentation */}
+        <section className="flex flex-col items-center gap-2">
+          <Image
+            src="/guts.jpg"
+            alt="Guts from the anime 'Berserk'"
+            width={150}
+            height={150}
+            className="rounded-full size-32"
+          />
+          <h1 className="text-5xl">{`${t('firstName')} ${t('lastName')}`}</h1>
+          <h2 className="text-lg">{t('title')}</h2>
+          <ul className="flex flex-row justify-around gap-4">
+            <li className="rounded-full overflow-hidden">
+              <Image
+                src="/github-mark-white.svg"
+                alt="GitHub"
+                width={32}
+                height={32}
+                className="cursor-pointer"
+              />
+            </li>
+            <li className="rounded-full overflow-hidden">
+              <Image
+                src="/linkedin-mark-white.svg"
+                alt="LinkedIn"
+                width={32}
+                height={32}
+                className="cursor-pointer"
+              />
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer className="min-h-screen flex flex-col items-center justify-center">
-        <h1>{t('title')}</h1>
-      </footer>
+      <Footer />
     </>
   );
 };

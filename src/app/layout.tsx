@@ -5,10 +5,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
-import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider';
-import TopBar from '@/components/TopBar';
-import Background from '@/components/ui/Background';
-
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -38,31 +34,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <SmoothScrollProvider>
-            <Background
-              className="size-full"
-              gradient={{
-                display: true,
-                colorStart: 'rgba(0, 125, 100, 0.65)',
-                colorEnd: 'rgba(15, 15, 15, 1)',
-                radius: 600,
-                opacity: 1,
-              }}
-              dots={{
-                display: true,
-                color: 'rgba(255, 255, 255, 0.95)',
-                radius: 3,
-              }}
-              lines={{
-                display: true,
-                color: 'rgba(255, 255, 255, 0.5)',
-              }}
-            />
-            <TopBar />
-            {children}
-          </SmoothScrollProvider>
-        </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
