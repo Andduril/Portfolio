@@ -8,6 +8,44 @@
   "presentation": {
     "firstName": "Anddy",
     "lastName": "Labrut",
-    "title": "Full Stack Web Developer"
+    "title": "Full Stack Web Developer",
+    "statistics": {
+      "yearsOfExperience": "Years of Experience",
+      "yearsOfStudies": "Years of Studies",
+      "degreesEarned": "Degrees Earned"
+    },
+    "curriculum": "My Resume",
+    "description": "I am a Full Stack Web Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
+  },
+  "formations": {
+    "title": "Education",
+    "dut": {
+      "title": "Associate Degree in Computer Science (DUT Informatique)",
+      "description": "A two-year technical degree focusing on computer science, covering programming, databases, and web development.",
+      "institution": "Université Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2019",
+      "endYear": "2021"
+    },
+    "bachelor": {
+      "title": "Bachelor's Degree in Computer Science (Licence Informatique)",
+      "description": "A professional bachelor's degree specializing in web design, content creation, and digital production.",
+      "institution": "Université Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2021",
+      "endYear": "2022"
+    },
+    "master": {
+      "title": "Master’s Degree in IT & Business Management (MIAGE)",
+      "description": "A master's degree in Computer Science focusing on Information Systems Management, combining technical and managerial skills.",
+      "institution": "Université de Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2023",
+      "endYear": "2025"
+    }
+  },
+  "experiences": {
+    "title": "Experiences",
+    "description": "I have worked on various projects, both personal and professional, that have allowed me to develop my skills in web development. My experience includes working with modern frameworks, databases, and cloud technologies."
   }
 }

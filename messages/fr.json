@@ -8,6 +8,44 @@
   "presentation": {
     "firstName": "Anddy",
     "lastName": "Labrut",
-    "title": "Développeur Web Full Stack"
+    "title": "Développeur Web Full Stack",
+    "statistics": {
+      "yearsOfExperience": "Années d'experiences",
+      "yearsOfStudies": "Années d'études",
+      "degreesEarned": "Diplômes obtenus"
+    },
+    "curriculum": "Mon CV",
+    "description": "Je suis un développeur web full stack passionné par la création d'applications web dynamiques et réactives. Avec une solide formation en technologies front-end et back-end, je m'efforce de fournir des solutions de haute qualité qui répondent aux besoins des utilisateurs et aux objectifs commerciaux."
+  },
+  "formations": {
+    "title": "Formations",
+    "dut": {
+      "title": "Diplôme Universitaire de Technologie en Informatique (DUT Informatique)",
+      "description": "Un diplôme technique de deux ans axé sur l'informatique, couvrant la programmation, les bases de données et le développement web.",
+      "institution": "Université Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2019",
+      "endYear": "2021"
+    },
+    "bachelor": {
+      "title": "Licence d'informatique",
+      "description": "Une licence professionnelle spécialisée dans la conception web, la création de contenu et la production numérique.",
+      "institution": "Université Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2021",
+      "endYear": "2022"
+    },
+    "master": {
+      "title": "Master en Informatique et Management des Entreprises (MIAGE)",
+      "description": "Un master en informatique axé sur la gestion des systèmes d'information, combinant compétences techniques et managériales.",
+      "institution": "Université de Picardie Jules Verne",
+      "location": "Amiens, France",
+      "startYear": "2023",
+      "endYear": "2025"
+    }
+  },
+  "experiences": {
+    "title": "Expériences",
+    "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud."
   }
 }

@@ -1,5 +1,8 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import Experiences from '@/components/sections/experiences/Experiences';
+import Formations from '@/components/sections/formations/Formations';
+import Presentation from '@/components/sections/presentation/Presentation';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
@@ -9,39 +12,12 @@ const HomePage = async () => {
   return (
     <>
       <Header />
-      <main className="pt-20">
-        {/* Presentation */}
-        <section className="flex flex-col items-center gap-2">
-          <Image
-            src="/guts.jpg"
-            alt="Guts from the anime 'Berserk'"
-            width={150}
-            height={150}
-            className="rounded-full size-32"
-          />
-          <h1 className="text-5xl">{`${t('firstName')} ${t('lastName')}`}</h1>
-          <h2 className="text-lg">{t('title')}</h2>
-          <ul className="flex flex-row justify-around gap-4">
-            <li className="rounded-full overflow-hidden">
-              <Image
-                src="/github-mark-white.svg"
-                alt="GitHub"
-                width={32}
-                height={32}
-                className="cursor-pointer"
-              />
-            </li>
-            <li className="rounded-full overflow-hidden">
-              <Image
-                src="/linkedin-mark-white.svg"
-                alt="LinkedIn"
-                width={32}
-                height={32}
-                className="cursor-pointer"
-              />
-            </li>
-          </ul>
-        </section>
+      <main className="pt-14 px-3.5 flex flex-col items-center gap-6">
+        <Presentation />
+        <Formations />
+        <Experiences />
+        {/* Projects */}
+        {/* Contact */}
       </main>
       <Footer />
     </>
