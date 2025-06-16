@@ -5,7 +5,7 @@ export type CardProps = {
 };
 
 const Card = ({ children }: CardProps) => {
-  return <div className="bg-car outline-1 outline-solid outline-font">{children}</div>;
+  return <div className="backdrop-blur-sm bg-gray-200/10 border border-white/20 rounded-xl shadow-lg p-6">{children}</div>;
 };
 
 export default Card;

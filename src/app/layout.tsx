@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
+import Background from '@/components/ui/Background';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,8 +33,9 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen bg-background text-font`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen bg-background text-font font-bold`}
       >
+        <Background />
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
