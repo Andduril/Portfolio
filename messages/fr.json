@@ -14,8 +14,11 @@
       "yearsOfStudies": "Années d'études",
       "degreesEarned": "Diplômes obtenus"
     },
-    "curriculum": "Mon CV",
-    "description": "Je suis un développeur web full stack passionné par la création d'applications web dynamiques et réactives. Avec une solide formation en technologies front-end et back-end, je m'efforce de fournir des solutions de haute qualité qui répondent aux besoins des utilisateurs et aux objectifs commerciaux."
+    "curriculum": "Mon CV"
+  },
+  "description": {
+    "title": "À propos de moi",
+    "content": "Je suis un développeur web full stack passionné par la création d'applications web dynamiques et réactives. Avec une solide formation en technologies front-end et back-end, je m'efforce de fournir des solutions de haute qualité qui répondent aux besoins des utilisateurs et aux objectifs commerciaux. J'ai une expérience dans le développement d'applications web, la gestion de bases de données et l'intégration de services tiers. Mon objectif est de continuer à apprendre et à m'améliorer dans le domaine du développement web."
   },
   "formations": {
     "title": "Formations",
@@ -46,6 +49,38 @@
   },
   "experiences": {
     "title": "Expériences",
-    "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud."
+    "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud.",
+    "content": {
+      "isagri": {
+        "title": "ISAGRI",
+        "jobTitle": "Développeur Web",
+        "description": "Une entreprise leader dans les solutions logicielles agricoles, où j'ai contribué au développement d'applications web.",
+        "location": "Beauvais, France",
+        "startYear": "2023",
+        "startMonth": "Sept",
+        "endYear": "2025",
+        "endMonth": "Sept"
+      },
+      "amsilab": {
+        "title": "Amsilab",
+        "jobTitle": "Stagiaire développeur Web",
+        "description": "Une entreprise spécialisée dans le développement de solutions numériques innovantes.",
+        "location": "Amiens, France",
+        "startYear": "2022",
+        "startMonth": "Mai",
+        "endYear": "2022",
+        "endMonth": "Août"
+      },
+      "cgi": {
+        "title": "CGI",
+        "jobTitle": "Stagiaire développeur SAP",
+        "description": "Une entreprise mondiale de services en technologies de l'information et en gestion des processus d'affaires.",
+        "location": "Arras, France",
+        "startYear": "2022",
+        "startMonth": "Avril",
+        "endYear": "2022",
+        "endMonth": "Mai"
+      }
+    }
   }
 }

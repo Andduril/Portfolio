@@ -1,5 +1,6 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import Description from '@/components/sections/description/Description';
 import Experiences from '@/components/sections/experiences/Experiences';
 import Formations from '@/components/sections/formations/Formations';
 import Presentation from '@/components/sections/presentation/Presentation';
@@ -13,9 +14,12 @@ const HomePage = async () => {
   return (
     <>
       <Header />
-      <main className="pt-14 px-3.5 flex flex-col items-center gap-6">
-        <Card>
+      <main className="py-32 px-3.5 flex flex-col items-center gap-6">
+        <Card className="w-sm bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
           <Presentation />
+        </Card>
+        <Card className="w-sm bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
+          <Description />
         </Card>
         <Formations />
         <Experiences />

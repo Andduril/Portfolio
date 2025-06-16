@@ -14,8 +14,11 @@
       "yearsOfStudies": "Years of Studies",
       "degreesEarned": "Degrees Earned"
     },
-    "curriculum": "My Resume",
-    "description": "I am a Full Stack Web Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
+    "curriculum": "My Resume"
+  },
+  "description": {
+    "title": "About Me",
+    "content": "I am a Full Stack Web Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals. I have experience in developing web applications, managing databases, and integrating third-party services. My goal is to continue learning and improving in the field of web development."
   },
   "formations": {
     "title": "Education",
@@ -46,6 +49,38 @@
   },
   "experiences": {
     "title": "Experiences",
-    "description": "I have worked on various projects, both personal and professional, that have allowed me to develop my skills in web development. My experience includes working with modern frameworks, databases, and cloud technologies."
+    "description": "I have worked on various projects, both personal and professional, that have allowed me to develop my skills in web development. My experience includes working with modern frameworks, databases, and cloud technologies.",
+    "content": {
+      "isagri": {
+        "title": "ISAGRI",
+        "jobTitle": "Web Developer",
+        "description": "A leading company in agricultural software solutions, where I contributed to the development of web applications.",
+        "location": "Beauvais, France",
+        "startYear": "2023",
+        "startMonth": "September",
+        "endYear": "2025",
+        "endMonth": "September"
+      },
+      "amsilab": {
+        "title": "AmsiLab",
+        "jobTitle": "Web Developer Intern",
+        "description": "A research lab focused on innovative software solutions, where I worked on various projects related to web technologies.",
+        "location": "Amiens, France",
+        "startYear": "2022",
+        "startMonth": "May",
+        "endYear": "2022",
+        "endMonth": "August"
+      },
+      "cgi": {
+        "title": "CGI",
+        "jobTitle": "IT Consultant Intern",
+        "description": "A global IT and business consulting services firm, where I gained experience in large-scale software development projects.",
+        "location": "Arras, France",
+        "startYear": "2022",
+        "startMonth": "April",
+        "endYear": "2022",
+        "endMonth": "May"
+      }
+    }
   }
 }

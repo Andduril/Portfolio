@@ -3,18 +3,54 @@ type Blob = {
   left: string;
   size: string;
   opacity: number;
-  color: string;
-}
+  blobColors?: BlobColors;
+};
+
+export type BlobColors = {
+  beginColor: string;
+  endColor: string;
+  rotation?: string;
+};
+
+const pinkBlob: BlobColors = {
+  beginColor: '#c64dbf',
+  endColor: '#391748',
+  rotation: '180deg',
+};
+
+const purpleBlob: BlobColors = {
+  beginColor: '#4e2262',
+  endColor: '#5d2278',
+  rotation: '180deg',
+};
 
 const Background = () => {
   const blobs: Blob[] = [
-    { top: '10%', left: '55%', size: '200px', opacity: 1, color: '#c64dbf' },
-    // { top: '30%', left: '70%', size: '50px', opacity: 1, color: '#c64dbf' },
-    // { top: '60%', left: '40%', size: '70px', opacity: 1, color: '#c64dbf' },
-  ]
+    {
+      top: '10%',
+      left: '40%',
+      size: '180px',
+      opacity: 1,
+      blobColors: pinkBlob,
+    },
+    {
+      top: '60%',
+      left: '10%',
+      size: '85px',
+      opacity: 1,
+      blobColors: purpleBlob,
+    },
+    {
+      top: '85%',
+      left: '70%',
+      size: '50px',
+      opacity: 1,
+      blobColors: purpleBlob,
+    },
+  ];
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen z-[-1]">
+    <div className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-hidden">
       {blobs.map((blob, index) => (
         <div
           key={index}
@@ -25,13 +61,12 @@ const Background = () => {
             width: blob.size,
             height: blob.size,
             opacity: blob.opacity,
-            backgroundColor: blob.color,
+            background: `linear-gradient(${blob.blobColors?.rotation || '0deg'}, ${blob.blobColors?.beginColor}, ${blob.blobColors?.endColor})`,
           }}
         />
       ))}
-
     </div>
-  )
-}
+  );
+};
 
 export default Background;

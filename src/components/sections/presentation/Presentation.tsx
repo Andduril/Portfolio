@@ -3,23 +3,26 @@ import Image from 'next/image';
 import Statistics from './Statistics';
 import Social from './Social';
 import DownloadIcon from '@/components/icons/DownloadIcon';
+import Card from '@/components/ui/Card';
 
 const Presentation = async () => {
   const t = await getTranslations('presentation');
   const locale = await getLocale();
 
   return (
-    <section className="flex flex-col items-center gap-3">
+    <section className="flex flex-col items-center gap-3 pt-15 relative">
       <Image
         src="/guts.jpg"
         alt="Guts from the anime 'Berserk'"
         width={150}
         height={150}
-        className="rounded-full size-28"
+        className="absolute left-1/2 top-0 -translate-1/2 rounded-full size-28"
       />
       <h1 className="text-4xl">{`${t('firstName')} ${t('lastName')}`}</h1>
       <h2 className="text-md">{t('title')}</h2>
-      <Statistics />
+      <Card noBorder className="px-4 py-3 bg-black/40">
+        <Statistics />
+      </Card>
       <ul className="flex flex-row justify-around gap-4">
         <Social
           src="/github-mark-white.svg"
@@ -34,7 +37,7 @@ const Presentation = async () => {
           size={32}
         />
       </ul>
-      <p className="px-2 text-md text-justify">{t('description')}</p>
+      {/* <p className="px-2 text-md text-justify">{t('description')}</p> */}
       <a
         download
         href={`/Anddy_Labrut_resume_${locale}.pdf`}

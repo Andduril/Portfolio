@@ -1,11 +1,26 @@
-import { ReactNode } from 'react';
+import { cn } from '@sglara/cn';
+import { ComponentPropsWithoutRef, FC, ReactNode } from 'react';
 
 export type CardProps = {
-  children?: ReactNode;
+  noBorder?: boolean;
 };
 
-const Card = ({ children }: CardProps) => {
-  return <div className="backdrop-blur-sm bg-gray-200/10 border border-white/20 rounded-xl shadow-lg p-6">{children}</div>;
+const Card: FC<ComponentPropsWithoutRef<'div'> & CardProps> = ({
+  children,
+  className,
+  noBorder,
+  ...props
+}) => {
+  return (
+    <div
+      className={cn(
+        `backdrop-blur-md ${!noBorder && 'border-white/20 border border-spacing-0.5'} rounded-xl p-6`,
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Card;
