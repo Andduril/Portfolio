@@ -1,8 +1,12 @@
+'use client';
+
 import Card from '@/components/ui/Card';
 import { ExperienceType } from '@/models/Experience';
 import { getTranslations } from 'next-intl/server';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import Image from 'next/image';
+import DownIcon from '@/components/icons/DownIcon';
+import { useTranslations } from 'next-intl';
 
 export type ExperienceCardProps = {
   type: ExperienceType;
@@ -22,8 +26,13 @@ const getColor = (type: ExperienceType): string => {
   }
 };
 
-const ExperienceCard: FC<ExperienceCardProps> = async ({ type, imagePath }) => {
-  const t = await getTranslations(`experiences.content.${type}`);
+const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
+  const [open, setOpen] = useState<boolean>();
+  const t = useTranslations(`experiences.content.${type}`);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  }
 
   return (
     <Card className={`w-sm bg-radial-[at_50%_0%] ${getColor(type)} relative`}>
@@ -47,12 +56,25 @@ const ExperienceCard: FC<ExperienceCardProps> = async ({ type, imagePath }) => {
         <h3 className="text-lg font-semibold">
           {t('title')} - {t('jobTitle')}
         </h3>
-        <Card noBorder className="flex flex-row items-center gap-2 px-2 bg-black/20">
+        {/* {open && (
+          <p className='text-xs text-justify font-normal'>{t('description')}</p>
+        )} */}
+
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? 'max-h-96' : 'max-h-0'}`}
+        >
+          <p className='text-xs text-justify font-normal'>{t('description')}</p>
+        </div>
+
+        <div className='w-full flex justify-center items-center cursor-pointer' onClick={handleOpen}>
+          <DownIcon className={`size-8 transform transition-transform duration-300 ${!open ? '' : 'rotate-180'}`}/>
+        </div>
+        {/* <Card noBorder className="flex flex-row items-center gap-2 px-2 bg-black/20">
           <p className="text-xs text-justify font-normal">{t('description')}</p>
           <a className="bg-blue-600 rounded-lg cursor-pointer min-w-24 text-xs flex flex-col items-center justify-center p-1">
             En savoir plus
           </a>
-        </Card>
+        </Card> */}
       </li>
     </Card>
   );
