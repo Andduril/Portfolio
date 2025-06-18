@@ -9,8 +9,8 @@ const Experiences = async () => {
       <h2 className="text-3xl">{t('title')}</h2>
       <ul className="flex flex-col gap-4">
         <ExperienceCard type="isagri" imagePath="/logo_isagri_ang-1.png" />
-        <ExperienceCard type="cgi" imagePath="/logo_cgi_color.png" />
         <ExperienceCard type="amsilab" imagePath="/logo_amsilab.png" />
+        <ExperienceCard type="cgi" imagePath="/logo_cgi_color.png" />
       </ul>
     </section>
   );

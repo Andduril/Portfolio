@@ -7,6 +7,8 @@ import { FC, useState } from 'react';
 import Image from 'next/image';
 import DownIcon from '@/components/icons/DownIcon';
 import { useTranslations } from 'next-intl';
+import Tabs from '@/components/ui/Tabs';
+import Link from 'next/link';
 
 export type ExperienceCardProps = {
   type: ExperienceType;
@@ -32,7 +34,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
 
   const handleOpen = () => {
     setOpen(!open);
-  }
+  };
 
   return (
     <Card className={`w-sm bg-radial-[at_50%_0%] ${getColor(type)} relative`}>
@@ -63,11 +65,25 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
         <div
           className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? 'max-h-96' : 'max-h-0'}`}
         >
-          <p className='text-xs text-justify font-normal'>{t('description')}</p>
+          <div className="flex flex-col gap-2 items-center w-full">
+            <p className="text-xs text-justify font-normal">{t('description')}</p>
+            <h5>Technologies</h5>
+            <ul className="flex flex-row gap-2 text-xs font-normal">
+              <li>React</li>
+              <li>.Net</li>
+              <li>SqlServer</li>
+            </ul>
+            <Link href={`/experience/${type}`}>More</Link>
+          </div>
         </div>
 
-        <div className='w-full flex justify-center items-center cursor-pointer' onClick={handleOpen}>
-          <DownIcon className={`size-8 transform transition-transform duration-300 ${!open ? '' : 'rotate-180'}`}/>
+        <div
+          className="w-full flex justify-center items-center cursor-pointer"
+          onClick={handleOpen}
+        >
+          <DownIcon
+            className={`size-8 transform transition-transform duration-300 ${!open ? '' : 'rotate-180'}`}
+          />
         </div>
         {/* <Card noBorder className="flex flex-row items-center gap-2 px-2 bg-black/20">
           <p className="text-xs text-justify font-normal">{t('description')}</p>
