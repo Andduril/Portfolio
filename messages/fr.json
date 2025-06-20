@@ -109,5 +109,47 @@
       }
     },
     "seeMore": "Voir plus"
+  },
+  "projects": {
+    "title": "Projets",
+    "description": "Voici quelques-uns de mes projets récents, qui démontrent mes compétences en développement web et ma capacité à résoudre des problèmes complexes.",
+    "content": {
+      "alistigo": {
+        "title": "Alistigo",
+        "description": "Un projet de gestion de contenu et de médias sociaux, développé avec React et Node.js.",
+        "technologies": {
+          "languages": "JavaScript|TypeScript",
+          "frameworks": "React|Node.js",
+          "databases": "MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Mon portfolio personnel, construit avec Vue.js et Express, pour présenter mes projets et compétences.",
+        "technologies": {
+          "languages": "JavaScript|TypeScript",
+          "frameworks": "Vue.js|Express",
+          "databases": "MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        }
+      },
+      "chatApplication": {
+        "title": "Application de Chat",
+        "description": "Une application de chat en temps réel utilisant WebSocket, Node.js et React.",
+        "technologies": {
+          "languages": "JavaScript|TypeScript",
+          "frameworks": "React|Node.js",
+          "databases": "MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        }
+      }
+    }
+  },
+  "contact": {
+    
   }
 }

@@ -109,5 +109,51 @@
       }
     },
     "seeMore": "See More"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "I have worked on various personal and collaborative projects that showcase my skills in web development.",
+    "content": {
+      "alistigo": {
+        "title": "Alistigo",
+        "description": "A web application for managing and sharing lists of items, built with React and Node.js.",
+        "technologies": {
+          "languages": "JavaScript|TypeScript",
+          "frameworks": "React|Node.js",
+          "databases": "MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        },
+        "link": "https://alistigo.com"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "My personal portfolio website showcasing my skills, projects, and experiences.",
+        "technologies": {
+          "languages": "HTML|CSS|JavaScript",
+          "frameworks": "React",
+          "databases": "None",
+          "tools": "Git|Webpack",
+          "cloud": "Netlify"
+        },
+        "link": "https://anddy-labrut.com"
+
+      },
+      "chatApplication": {
+        "title": "Chat Application",
+        "description": "A real-time chat application built with React and Socket.io, allowing users to communicate in real-time.",
+        "technologies": {
+          "languages": "JavaScript|TypeScript",
+          "frameworks": "React|Socket.io",
+          "databases": "MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "Heroku"
+        },
+        "link": "https://chat-app.anddy-labrut.com"
+      }
+    }
+  },
+  "contact": {
+    
   }
 }
