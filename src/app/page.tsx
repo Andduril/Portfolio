@@ -1,9 +1,11 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import Contact from '@/components/sections/contact/Contact';
 import Description from '@/components/sections/description/Description';
 import Experiences from '@/components/sections/experiences/Experiences';
 import Formations from '@/components/sections/formations/Formations';
 import Presentation from '@/components/sections/presentation/Presentation';
+import Projects from '@/components/sections/projects/Projects';
 import Card from '@/components/ui/Card';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
@@ -23,8 +25,8 @@ const HomePage = async () => {
         </Card>
         <Formations />
         <Experiences />
-        {/* Projects */}
-        {/* Contact */}
+        <Projects />
+        <Contact />
       </main>
       <Footer />
     </>

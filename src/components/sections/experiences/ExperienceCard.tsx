@@ -2,13 +2,13 @@
 
 import Card from '@/components/ui/Card';
 import { ExperienceType } from '@/models/Experience';
-import { getTranslations } from 'next-intl/server';
 import { FC, useState } from 'react';
 import Image from 'next/image';
 import DownIcon from '@/components/icons/DownIcon';
-import { useTranslations } from 'next-intl';
-import Tabs from '@/components/ui/Tabs';
-import Link from 'next/link';
+import { useMessages, useTranslations } from 'next-intl';
+import Button from '@/components/ui/Button';
+import TechBadge from './TechBadge';
+import { getVariantFromTechnology } from '@/utils/variantHelper';
 
 export type ExperienceCardProps = {
   type: ExperienceType;
@@ -31,6 +31,7 @@ const getColor = (type: ExperienceType): string => {
 const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
   const [open, setOpen] = useState<boolean>();
   const t = useTranslations(`experiences.content.${type}`);
+  const tExp = useTranslations('experiences');
 
   const handleOpen = () => {
     setOpen(!open);
@@ -67,13 +68,32 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
         >
           <div className="flex flex-col gap-2 items-center w-full">
             <p className="text-xs text-justify font-normal">{t('description')}</p>
-            <h5>Technologies</h5>
-            <ul className="flex flex-row gap-2 text-xs font-normal">
-              <li>React</li>
-              <li>.Net</li>
-              <li>SqlServer</li>
-            </ul>
-            <Link href={`/experience/${type}`}>More</Link>
+            <div className="flex flex-col gap-1 items-center">
+              <h5>{tExp('languages')}</h5>
+              <ul className="flex flex-row gap-2 text-xs font-normal">
+                {t('technologies.languages')
+                  .split('|')
+                  .map((lang, index) => (
+                    <TechBadge key={index} text={lang} variant={getVariantFromTechnology(lang)} />
+                  ))}
+              </ul>
+              <h5>{tExp('frameworks')}</h5>
+              <ul className="flex flex-row gap-2 text-xs font-normal">
+                {t('technologies.frameworks')
+                  .split('|')
+                  .map((framework, index) => (
+                    <TechBadge
+                      key={index}
+                      text={framework}
+                      variant={getVariantFromTechnology(framework)}
+                    />
+                  ))}
+              </ul>
+            </div>
+
+            <Button className="mt-4" href={`/experience/${type}`} target="_blank">
+              {tExp('seeMore')}
+            </Button>
           </div>
         </div>
 
@@ -85,12 +105,6 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
             className={`size-8 transform transition-transform duration-300 ${!open ? '' : 'rotate-180'}`}
           />
         </div>
-        {/* <Card noBorder className="flex flex-row items-center gap-2 px-2 bg-black/20">
-          <p className="text-xs text-justify font-normal">{t('description')}</p>
-          <a className="bg-blue-600 rounded-lg cursor-pointer min-w-24 text-xs flex flex-col items-center justify-center p-1">
-            En savoir plus
-          </a>
-        </Card> */}
       </li>
     </Card>
   );

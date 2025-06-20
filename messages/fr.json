@@ -50,6 +50,11 @@
   "experiences": {
     "title": "Expériences",
     "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud.",
+    "languages": "Langages",
+    "frameworks": "Frameworks",
+    "databases": "Bases de données",
+    "tools": "Outils",
+    "cloud": "Cloud",
     "content": {
       "isagri": {
         "title": "ISAGRI",
@@ -59,7 +64,14 @@
         "startYear": "2023",
         "startMonth": "Sept",
         "endYear": "2025",
-        "endMonth": "Sept"
+        "endMonth": "Sept",
+        "technologies": {
+          "languages": "JavaScript|TypeScript|PHP",
+          "frameworks": "React|Node.js|Symfony",
+          "databases": "MySQL|PostgreSQL",
+          "tools": "Git|Docker|Jenkins",
+          "cloud": "AWS|Azure"
+        }
       },
       "amsilab": {
         "title": "Amsilab",
@@ -69,7 +81,14 @@
         "startYear": "2022",
         "startMonth": "Mai",
         "endYear": "2022",
-        "endMonth": "Août"
+        "endMonth": "Août",
+        "technologies": {
+          "languages": "JavaScript|PHP",
+          "frameworks": "React|Laravel",
+          "databases": "MySQL|MongoDB",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        }
       },
       "cgi": {
         "title": "CGI",
@@ -79,8 +98,16 @@
         "startYear": "2022",
         "startMonth": "Avril",
         "endYear": "2022",
-        "endMonth": "Mai"
+        "endMonth": "Mai",
+        "technologies": {
+          "languages": "ABAP|TypeScript|PHP",
+          "frameworks": "SAPUI5|React",
+          "databases": "SAP HANA|MySQL",
+          "tools": "Git|Docker",
+          "cloud": "AWS"
+        }
       }
-    }
+    },
+    "seeMore": "Voir plus"
   }
 }
