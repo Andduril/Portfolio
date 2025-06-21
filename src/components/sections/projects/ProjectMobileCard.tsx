@@ -22,19 +22,20 @@ const ProjectMobileCard: FC<ComponentPropsWithoutRef<'li'> & ProjectMobileCardPr
   const t = await getTranslations(`projects.content.${project}`);
 
   return (
-    <Card>
-      <li
-        className={cn('flex flex-row items-center justify-between relative', className)}
-        {...props}
-      >
-        {/* Image */}
-        <div className="w-1/5 h-8 shrink-0 relative">
-          <Image src={imagePath} alt={`${project} icon`} fill objectFit="contain" />
-        </div>
-        {/* Description */}
-        <h5>{t('title')}</h5>
-        {/* Bouton */}
-        <Link href={`/project/${project}`} className="">
+    <Card className="p-0">
+      <li className={cn(className)} {...props}>
+        <Link
+          className="flex flex-row items-center justify-between relative p-6"
+          href={`/project/${project}`}
+        >
+          {/* Image */}
+          <div className="w-1/5 h-8 shrink-0 relative">
+            <Image src={imagePath} alt={`${project} icon`} fill objectFit="contain" />
+          </div>
+          {/* Description */}
+          <h5>{t('title')}</h5>
+          {/* Bouton */}
+
           <RightIcon />
         </Link>
       </li>

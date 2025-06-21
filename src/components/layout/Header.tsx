@@ -17,15 +17,15 @@ const Header = () => {
         <button className="cursor-pointer" onClick={handleSettingsClick}>
           {locale === 'en' ? '🇫🇷' : '🇬🇧'}
         </button>
-        <ul className="flex-grow font-normal text-sm flex flex-row gap-2">
+        {/* <ul className="flex-grow font-normal text-sm flex flex-row gap-2">
           <li></li>
           <li className="cursor-pointer">
-            <a href="#presentation">{t('projects')}</a>
+            <a href="#projects">{t('projects')}</a>
           </li>
           <li className="cursor-pointer">
             <a href="#contact">{t('contact')}</a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );

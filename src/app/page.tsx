@@ -8,14 +8,13 @@ import Presentation from '@/components/sections/presentation/Presentation';
 import Projects from '@/components/sections/projects/Projects';
 import Card from '@/components/ui/Card';
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 
 const HomePage = async () => {
   const t = await getTranslations('presentation');
 
   return (
     <>
-      <main className="py-32 overflow-hidden">
+      <main className="py-24 overflow-hidden">
         <div className="flex flex-col items-center px-2 gap-6">
           <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
             <Presentation />
@@ -28,6 +27,9 @@ const HomePage = async () => {
           <Card className="max-w-full w-full sm:w-auto">
             <Projects />
           </Card>
+          <div className="max-w-full w-full sm:w-auto p-4">
+            <Contact />
+          </div>
         </div>
         {/* 
         
