@@ -5,7 +5,7 @@ const Statistics = async () => {
   const t = await getTranslations('presentation.statistics');
 
   return (
-    <ul className="flex flex-row justify-around gap-4">
+    <ul className="flex flex-row flex-wrap justify-around gap-4">
       <StatisticCard title={t('yearsOfExperience')} value={2} />
       <StatisticCard title={t('yearsOfStudies')} value={5} />
       <StatisticCard title={t('degreesEarned')} value={3} />

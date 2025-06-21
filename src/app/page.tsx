@@ -16,17 +16,23 @@ const HomePage = async () => {
   return (
     <>
       <Header />
-      <main className="py-32 px-3.5 flex flex-col items-center gap-6">
-        <Card className="w-sm bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
-          <Presentation />
-        </Card>
-        <Card className="w-sm bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
-          <Description />
-        </Card>
-        <Formations />
+      <main className="py-32 overflow-hidden">
+        <div className="flex flex-col items-center px-2 gap-6">
+          <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
+            <Presentation />
+          </Card>
+          <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
+            <Description />
+          </Card>
+          <Formations className="max-w-full w-full sm:w-auto" />
+          <Experiences className="max-w-full w-full sm:w-auto" />
+        </div>
+        {/* 
+        
+        
         <Experiences />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </main>
       <Footer />
     </>

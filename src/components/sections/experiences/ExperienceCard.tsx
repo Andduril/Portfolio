@@ -76,27 +76,16 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
   };
 
   return (
-    <Card className={`w-sm bg-radial-[at_50%_0%] ${getColor(type)} relative overflow-x-hidden`}>
+    <Card className={`bg-radial-[at_50%_0%] ${getColor(type)} overflow-hidden`}>
       <li className="flex flex-col gap-2 items-center w-full relative">
-        <div className="w-full flex flex-row justify-between items-center">
-          <div className="flex flex-col gap-1 items-center">
-            <span>{t('startMonth')}</span>
-            <span>{t('startYear')}</span>
-          </div>
-          <div className="grow flex flex-col items-center relative">
-            <div className="h-12 w-full relative">
-              <Image src={imagePath} alt={`${t('title')} logo`} fill objectFit="contain" />
-            </div>
-            <span className="font-normal text-sm">{t('location')}</span>
-          </div>
-          <div className="flex flex-col gap-1 items-center">
-            <span>{t('endMonth')}</span>
-            <span>{t('endYear')}</span>
-          </div>
+        <div className="relative w-2/3 h-20">
+          <Image src={imagePath} alt={`${t('title')} logo`} fill className="object-contain" />
         </div>
-        <h3 className="text-lg font-semibold">
-          {t('title')} - {t('jobTitle')}
-        </h3>
+        <h3 className="text-lg text-center font-semibold">{t('title')}</h3>
+        <h4 className="text-md text-center font-normal">{t('jobTitle')}</h4>
+        <span className="text-center text-sm font-light">
+          {t('startYear')} - {t('endYear')}
+        </span>
         <div
           className={`overflow-hidden max-w-full transition-all duration-500 ease-in-out ${open ? 'max-h-96' : 'max-h-0'}`}
         >

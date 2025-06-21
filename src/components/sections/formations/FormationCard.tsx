@@ -11,7 +11,7 @@ const FormationCard: FC<FormationCardProps> = async ({ type }) => {
   const t = await getTranslations(`formations.${type}`);
 
   return (
-    <Card className="w-sm bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
+    <Card className="bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
       <li className="flex flex-col gap-1">
         <h3 className="text-sm">{t('title')}</h3>
         <p className="text-xs">{t('institution')}</p>

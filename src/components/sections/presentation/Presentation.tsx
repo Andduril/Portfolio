@@ -18,9 +18,9 @@ const Presentation = async () => {
         height={150}
         className="absolute left-1/2 top-0 -translate-1/2 rounded-full size-28"
       />
-      <h1 className="text-4xl">{`${t('firstName')} ${t('lastName')}`}</h1>
-      <h2 className="text-md">{t('title')}</h2>
-      <Card noBorder className="px-4 py-3 bg-black/40">
+      <h1 className="text-center text-4xl">{`${t('firstName')} ${t('lastName')}`}</h1>
+      <h2 className="text-center text-md">{t('title')}</h2>
+      <Card noBorder className="px-4 py-3 bg-black/40 relative max-w-full">
         <Statistics />
       </Card>
       <ul className="flex flex-row justify-around gap-4">
@@ -37,7 +37,6 @@ const Presentation = async () => {
           size={32}
         />
       </ul>
-      {/* <p className="px-2 text-md text-justify">{t('description')}</p> */}
       <a
         download
         href={`/Anddy_Labrut_resume_${locale}.pdf`}
