@@ -83,7 +83,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
         </div>
         <h3 className="text-lg text-center font-semibold">{t('title')}</h3>
         <h4 className="text-md text-center font-normal">{t('jobTitle')}</h4>
-        <span className="text-center text-sm font-light">
+        <span className="text-center text-sm">
           {t('startYear')} - {t('endYear')}
         </span>
         <div

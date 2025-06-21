@@ -1,0 +1,45 @@
+import RightIcon from '@/components/icons/RightIcon';
+import Button from '@/components/ui/Button';
+import Card from '@/components/ui/Card';
+import { ProjectType } from '@/models/Project';
+import { cn } from '@sglara/cn';
+import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ComponentPropsWithoutRef, FC } from 'react';
+
+type ProjectMobileCardProps = {
+  project: ProjectType;
+  imagePath: string;
+};
+
+const ProjectMobileCard: FC<ComponentPropsWithoutRef<'li'> & ProjectMobileCardProps> = async ({
+  project,
+  imagePath,
+  className,
+  ...props
+}) => {
+  const t = await getTranslations(`projects.content.${project}`);
+
+  return (
+    <Card>
+      <li
+        className={cn('flex flex-row items-center justify-between relative', className)}
+        {...props}
+      >
+        {/* Image */}
+        <div className="w-1/5 h-8 shrink-0 relative">
+          <Image src={imagePath} alt={`${project} icon`} fill objectFit="contain" />
+        </div>
+        {/* Description */}
+        <h5>{t('title')}</h5>
+        {/* Bouton */}
+        <Link href={`/project/${project}`} className="">
+          <RightIcon />
+        </Link>
+      </li>
+    </Card>
+  );
+};
+
+export default ProjectMobileCard;

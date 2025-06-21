@@ -1,21 +1,31 @@
 import Card from '@/components/ui/Card';
 import { FormationType } from '@/models/Formation';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import { FC } from 'react';
 
 export type FormationCardProps = {
   type: FormationType;
 };
 
+const getColor = (): string => {
+  return 'from-[#1e74e2]/20 to-[#59a2ff]/15';
+};
+
 const FormationCard: FC<FormationCardProps> = async ({ type }) => {
   const t = await getTranslations(`formations.${type}`);
 
   return (
-    <Card className="bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
+    <Card className={`bg-radial-[at_50%_0%] ${getColor()}`}>
       <li className="flex flex-col gap-1">
-        <h3 className="text-sm">{t('title')}</h3>
-        <p className="text-xs">{t('institution')}</p>
-        <p className="text-xs">
+        <div className="flex flex-row justify-start items-center gap-2">
+          <div className="relative size-14 shrink-0">
+            <Image src={'/upjv-bleu.png'} alt="logo upjv" fill className="object-contain" />
+          </div>
+          <h3 className="text-xs">{t('title')}</h3>
+        </div>
+        <p className="text-xs font-normal">{t('institution')}</p>
+        <p className="text-xs font-normal">
           {t('startYear')} - {t('endYear')} • {t('location')}
         </p>
         <p className="text-xs text-justify font-normal">{t('description')}</p>
