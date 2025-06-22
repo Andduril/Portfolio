@@ -44,8 +44,8 @@ const SkillTabs: FC<SkillTabsProps> = ({ tabs }) => {
             key={index}
             className="text-xs font-normal cursor-pointer flex flex-row items-center gap-2"
           >
-            {getSkillIcon(tab.key, activeIndex === index)}
-            <span className="hidden sm:inline">{tab.key}</span>
+            <div className="size-6">{getSkillIcon(tab.key, activeIndex === index)}</div>
+            <span className="hidden">{tab.key}</span>
           </li>
         ))}
       </ul>

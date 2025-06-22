@@ -231,5 +231,8 @@
   "contact": {
     "title": "Contact me",
     "description": "If you would like to get in touch with me for professional opportunities, collaborations, or projects, feel free to send me a message. I am always open to discussing new ideas and opportunities."
+  },
+  "footer": {
+    "copyright": "© 2025 Anddy Labrut"
   }
 }

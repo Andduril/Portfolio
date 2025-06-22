@@ -14,8 +14,8 @@ const HomePage = async () => {
   const t = await getTranslations('presentation');
 
   return (
-    <>
-      <main className="py-24 overflow-hidden">
+    <div className="flex flex-col items-center">
+      <main className="py-24 overflow-hidden max-w-sm">
         <div className="flex flex-col items-center px-2 gap-6">
           <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
             <Presentation />
@@ -42,7 +42,7 @@ const HomePage = async () => {
       </main>
       <Header />
       <Footer />
-    </>
+    </div>
   );
 };
 
