@@ -5,7 +5,7 @@ import { ComponentPropsWithoutRef, FC } from 'react';
 import ProjectMobileCard from './ProjectMobileCard';
 
 const Projects: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {
-  const t = await getTranslations('projects');
+  const t = await getTranslations('home.projects');
 
   return (
     <section className={cn('flex flex-col gap-2', className)} {...props}>

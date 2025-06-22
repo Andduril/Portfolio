@@ -8,7 +8,7 @@ type SkillTabProps = {
 };
 
 const SkillTab: FC<SkillTabProps> = async ({ skill }) => {
-  const t = await getTranslations(`skills.content.${skill}`);
+  const t = await getTranslations(`home.skills.content.${skill}`);
 
   return (
     <div className="w-full relative flex flex-col gap-2 p-2 font-normal overflow-y-scroll max-h-80">

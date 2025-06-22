@@ -1,235 +1,249 @@
 {
   "header": {
+    "title": "Anddy Labrut",
     "navigation": {
       "projects": "Projets",
       "contact": "Contact"
     }
   },
-  "presentation": {
-    "firstName": "Anddy",
-    "lastName": "Labrut",
-    "title": "Développeur Web Full Stack",
-    "statistics": {
-      "yearsOfExperience": "Années d'experiences",
-      "yearsOfStudies": "Années d'études",
-      "degreesEarned": "Diplômes obtenus"
-    },
-    "curriculum": "Mon CV"
-  },
-  "description": {
-    "title": "À propos de moi",
-    "content": "Je suis un développeur web full stack passionné par la création d'applications web dynamiques et réactives. Avec une solide formation en technologies front-end et back-end, je m'efforce de fournir des solutions de haute qualité qui répondent aux besoins des utilisateurs et aux objectifs commerciaux. J'ai une expérience dans le développement d'applications web, la gestion de bases de données et l'intégration de services tiers. Mon objectif est de continuer à apprendre et à m'améliorer dans le domaine du développement web."
-  },
-  "formations": {
-    "title": "Formations",
-    "dut": {
-      "title": "Diplôme Universitaire de Technologie en Informatique (DUT Informatique)",
-      "description": "Un diplôme technique de deux ans axé sur l'informatique, couvrant la programmation, les bases de données et le développement web.",
-      "institution": "Université Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2019",
-      "endYear": "2021"
-    },
-    "bachelor": {
-      "title": "Licence d'informatique",
-      "description": "Une licence professionnelle spécialisée dans la conception web, la création de contenu et la production numérique.",
-      "institution": "Université Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2021",
-      "endYear": "2022"
-    },
-    "master": {
-      "title": "Master en Informatique et Management des Entreprises (MIAGE)",
-      "description": "Un master en informatique axé sur la gestion des systèmes d'information, combinant compétences techniques et managériales.",
-      "institution": "Université de Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2023",
-      "endYear": "2025"
-    }
-  },
-  "experiences": {
-    "title": "Expériences",
-    "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud.",
-    "languages": "Langages",
-    "frameworks": "Frameworks",
-    "databases": "Bases de données",
-    "tools": "Outils",
-    "cloud": "Cloud",
-    "content": {
-      "isagri": {
-        "title": "ISAGRI",
-        "jobTitle": "Développeur Web",
-        "description": "Une entreprise leader dans les solutions logicielles agricoles, où j'ai contribué au développement d'applications web.",
-        "location": "Beauvais, France",
-        "startYear": "2023",
-        "startMonth": "Sept",
-        "endYear": "2025",
-        "endMonth": "Sept",
-        "technologies": {
-          "languages": "JavaScript|TypeScript|PHP",
-          "frameworks": "React|Node.js|Symfony",
-          "databases": "MySQL|PostgreSQL",
-          "tools": "Git|Docker|Jenkins",
-          "cloud": "AWS|Azure"
-        }
+  "home": {
+    "presentation": {
+      "firstName": "Anddy",
+      "lastName": "Labrut",
+      "title": "Développeur Web Full Stack",
+      "statistics": {
+        "yearsOfExperience": "Années d'experiences",
+        "yearsOfStudies": "Années d'études",
+        "degreesEarned": "Diplômes obtenus"
       },
-      "amsilab": {
-        "title": "Amsilab",
-        "jobTitle": "Stagiaire développeur Web",
-        "description": "Une entreprise spécialisée dans le développement de solutions numériques innovantes.",
+      "curriculum": "Mon CV"
+    },
+    "description": {
+      "title": "À propos de moi",
+      "content": "Je suis un développeur web full stack passionné par la création d'applications web dynamiques et réactives. Avec une solide formation en technologies front-end et back-end, je m'efforce de fournir des solutions de haute qualité qui répondent aux besoins des utilisateurs et aux objectifs commerciaux. J'ai une expérience dans le développement d'applications web, la gestion de bases de données et l'intégration de services tiers. Mon objectif est de continuer à apprendre et à m'améliorer dans le domaine du développement web."
+    },
+    "formations": {
+      "title": "Formations",
+      "dut": {
+        "title": "Diplôme Universitaire de Technologie en Informatique (DUT Informatique)",
+        "description": "Un diplôme technique de deux ans axé sur l'informatique, couvrant la programmation, les bases de données et le développement web.",
+        "institution": "Université Picardie Jules Verne",
         "location": "Amiens, France",
-        "startYear": "2022",
-        "startMonth": "Mai",
-        "endYear": "2022",
-        "endMonth": "Août",
-        "technologies": {
-          "languages": "JavaScript|PHP",
-          "frameworks": "React|Laravel",
-          "databases": "MySQL|MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
+        "startYear": "2019",
+        "endYear": "2021"
+      },
+      "bachelor": {
+        "title": "Licence d'informatique",
+        "description": "Une licence professionnelle spécialisée dans la conception web, la création de contenu et la production numérique.",
+        "institution": "Université Picardie Jules Verne",
+        "location": "Amiens, France",
+        "startYear": "2021",
+        "endYear": "2022"
+      },
+      "master": {
+        "title": "Master en Informatique et Management des Entreprises (MIAGE)",
+        "description": "Un master en informatique axé sur la gestion des systèmes d'information, combinant compétences techniques et managériales.",
+        "institution": "Université de Picardie Jules Verne",
+        "location": "Amiens, France",
+        "startYear": "2023",
+        "endYear": "2025"
+      }
+    },
+    "experiences": {
+      "title": "Expériences",
+      "description": "J'ai travaillé sur divers projets, tant personnels que professionnels, qui m'ont permis de développer mes compétences en développement web. Mon expérience inclut le travail avec des frameworks modernes, des bases de données et des technologies cloud.",
+      "languages": "Langages",
+      "frameworks": "Frameworks",
+      "databases": "Bases de données",
+      "tools": "Outils",
+      "cloud": "Cloud",
+      "content": {
+        "isagri": {
+          "title": "ISAGRI",
+          "jobTitle": "Développeur Web",
+          "description": "Une entreprise leader dans les solutions logicielles agricoles, où j'ai contribué au développement d'applications web.",
+          "location": "Beauvais, France",
+          "startYear": "2023",
+          "startMonth": "Sept",
+          "endYear": "2025",
+          "endMonth": "Sept",
+          "technologies": {
+            "languages": "JavaScript|TypeScript|PHP",
+            "frameworks": "React|Node.js|Symfony",
+            "databases": "MySQL|PostgreSQL",
+            "tools": "Git|Docker|Jenkins",
+            "cloud": "AWS|Azure"
+          }
+        },
+        "amsilab": {
+          "title": "Amsilab",
+          "jobTitle": "Stagiaire développeur Web",
+          "description": "Une entreprise spécialisée dans le développement de solutions numériques innovantes.",
+          "location": "Amiens, France",
+          "startYear": "2022",
+          "startMonth": "Mai",
+          "endYear": "2022",
+          "endMonth": "Août",
+          "technologies": {
+            "languages": "JavaScript|PHP",
+            "frameworks": "React|Laravel",
+            "databases": "MySQL|MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
+        },
+        "cgi": {
+          "title": "CGI",
+          "jobTitle": "Stagiaire développeur SAP",
+          "description": "Une entreprise mondiale de services en technologies de l'information et en gestion des processus d'affaires.",
+          "location": "Arras, France",
+          "startYear": "2022",
+          "startMonth": "Avril",
+          "endYear": "2022",
+          "endMonth": "Mai",
+          "technologies": {
+            "languages": "ABAP|TypeScript|PHP",
+            "frameworks": "SAPUI5|React",
+            "databases": "SAP HANA|MySQL",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
         }
       },
-      "cgi": {
-        "title": "CGI",
-        "jobTitle": "Stagiaire développeur SAP",
-        "description": "Une entreprise mondiale de services en technologies de l'information et en gestion des processus d'affaires.",
-        "location": "Arras, France",
-        "startYear": "2022",
-        "startMonth": "Avril",
-        "endYear": "2022",
-        "endMonth": "Mai",
-        "technologies": {
-          "languages": "ABAP|TypeScript|PHP",
-          "frameworks": "SAPUI5|React",
-          "databases": "SAP HANA|MySQL",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
+      "seeMore": "Voir plus"
+    },
+    "projects": {
+      "title": "Projets",
+      "description": "Voici quelques-uns de mes projets récents, qui démontrent mes compétences en développement web et ma capacité à résoudre des problèmes complexes.",
+      "content": {
+        "alistigo": {
+          "title": "Alistigo",
+          "description": "Un projet de gestion de contenu et de médias sociaux, développé avec React et Node.js.",
+          "technologies": {
+            "languages": "JavaScript|TypeScript",
+            "frameworks": "React|Node.js",
+            "databases": "MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "description": "Mon portfolio personnel, construit avec Vue.js et Express, pour présenter mes projets et compétences.",
+          "technologies": {
+            "languages": "JavaScript|TypeScript",
+            "frameworks": "Vue.js|Express",
+            "databases": "MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
+        },
+        "chatApplication": {
+          "title": "Application de Chat",
+          "description": "Une application de chat en temps réel utilisant WebSocket, Node.js et React.",
+          "technologies": {
+            "languages": "JavaScript|TypeScript",
+            "frameworks": "React|Node.js",
+            "databases": "MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
         }
       }
     },
-    "seeMore": "Voir plus"
-  },
-  "projects": {
-    "title": "Projets",
-    "description": "Voici quelques-uns de mes projets récents, qui démontrent mes compétences en développement web et ma capacité à résoudre des problèmes complexes.",
-    "content": {
-      "alistigo": {
-        "title": "Alistigo",
-        "description": "Un projet de gestion de contenu et de médias sociaux, développé avec React et Node.js.",
-        "technologies": {
-          "languages": "JavaScript|TypeScript",
-          "frameworks": "React|Node.js",
-          "databases": "MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
-        }
-      },
-      "portfolio": {
-        "title": "Portfolio",
-        "description": "Mon portfolio personnel, construit avec Vue.js et Express, pour présenter mes projets et compétences.",
-        "technologies": {
-          "languages": "JavaScript|TypeScript",
-          "frameworks": "Vue.js|Express",
-          "databases": "MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
-        }
-      },
-      "chatApplication": {
-        "title": "Application de Chat",
-        "description": "Une application de chat en temps réel utilisant WebSocket, Node.js et React.",
-        "technologies": {
-          "languages": "JavaScript|TypeScript",
-          "frameworks": "React|Node.js",
-          "databases": "MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
-        }
-      }
-    }
-  },
-  "skills": {
-    "title": "Compétences",
-    "content": {
-      "programmingLanguages": {
-        "title": "Langages de programmation",
-        "content": {
-          "javascript": "JavaScript",
-          "typescript": "TypeScript",
-          "php": "PHP",
-          "java": "Java",
-          "python": "Python",
-          "csharp": "C#",
-          "html": "HTML",
-          "css": "CSS",
-          "sql": "SQL"
-        }
-      },
-      "frameworks": {
-        "title": "Frameworks",
-        "content": {
-          "angular": "Angular",
-          "react": "React",
-          "vue": "Vue.js",
-          "nodejs": "Node.js",
-          "laravel": "Laravel",
-          "aspNet": "ASP.NET"
-        }
-      },
-      "softSkills": {
-        "title": "Compétences interpersonnelles",
-        "content": {
-          "communication": "Communication",
-          "teamwork": "Travail en équipe",
-          "problemSolving": "Résolution de problèmes",
-          "adaptability": "Adaptabilité",
-          "timeManagement": "Gestion du temps",
-          "criticalThinking": "Pensée critique"
+    "skills": {
+      "title": "Compétences",
+      "content": {
+        "programmingLanguages": {
+          "title": "Langages de programmation",
+          "content": {
+            "javascript": "JavaScript",
+            "typescript": "TypeScript",
+            "php": "PHP",
+            "java": "Java",
+            "python": "Python",
+            "csharp": "C#",
+            "html": "HTML",
+            "css": "CSS",
+            "sql": "SQL"
+          }
+        },
+        "frameworks": {
+          "title": "Frameworks",
+          "content": {
+            "angular": "Angular",
+            "react": "React",
+            "vue": "Vue.js",
+            "nodejs": "Node.js",
+            "laravel": "Laravel",
+            "aspNet": "ASP.NET"
+          }
+        },
+        "softSkills": {
+          "title": "Compétences interpersonnelles",
+          "content": {
+            "communication": "Communication",
+            "teamwork": "Travail en équipe",
+            "problemSolving": "Résolution de problèmes",
+            "adaptability": "Adaptabilité",
+            "timeManagement": "Gestion du temps",
+            "criticalThinking": "Pensée critique"
+          }
+        },
+        "rncp": {
+          "title": "Compétences RNCP",
+          "content": {
+            "RNCP39490BC01": "RNCP39490BC01",
+            "RNCP39490BC02": "RNCP39490BC02",
+            "RNCP39490BC03": "RNCP39490BC03",
+            "RNCP39490BC04": "RNCP39490BC04",
+            "RNCP39490BC07": "RNCP39490BC07",
+            "RNCP39490BC08": "RNCP39490BC08"
+          }
         }
       },
       "rncp": {
-        "title": "Compétences RNCP",
-        "content": {
-          "RNCP39490BC01": "RNCP39490BC01",
-          "RNCP39490BC02": "RNCP39490BC02",
-          "RNCP39490BC03": "RNCP39490BC03",
-          "RNCP39490BC04": "RNCP39490BC04",
-          "RNCP39490BC07": "RNCP39490BC07",
-          "RNCP39490BC08": "RNCP39490BC08"
+        "RNCP39490BC01": {
+          "title": "Mettre en œuvre les usages avancés et spécialisés des outils numériques",
+          "description": "Se servir de manière autonome des outils de développement informatique. (Ex: IDE, SGBD, plateformes DevOps)."
+        },
+        "RNCP39490BC02": {
+          "title": "Mobiliser et produire des savoirs hautement spécialisés",
+          "description": "# Mener un travail de recherche dans un domaine en vue d’accomplir une/des tâches dans un domaine inexploré.|Résoudre des problématiques terrains en analysant les impacts potentiels sur le fonctionnement courant des outils, et en optimisant les processus existants."
+        },
+        "RNCP39490BC03": {
+          "title": "Mettre en œuvre une communication spécialisée pour le transfert de connaissances",
+          "description": "Mener des échanges/réunions pour présenter des travaux d’états de l’art portant sur des sujets complexes/ de développement/ travaux finalisés.|Elaborer une documentation détaillée quant à des processus existants afin de permettre un transfert de compétences plus fluide."
+        },
+        "RNCP39490BC04": {
+          "title": "Contribuer à la transformation en contexte professionnel",
+          "description": "Conduire un projet informatique ( conception, pilotage, coordination d’équipe, mise en œuvre et gestion, évaluation, diffusion).|Analyser ses actions en situation professionnelle, s’autoévaluer pour améliorer sa pratique dans le cadre d'une démarche qualité."
+        },
+        "RNCP39490BC07": {
+          "title": "Conduire des projets d’ingénierie numérique",
+          "description": "Définir une stratégie de tests, réaliser les tests, établir la recette et les mettre en œuvre.|Définir, adapter et mettre en œuvre une méthode de gestion de projet."
+        },
+        "RNCP39490BC08": {
+          "title": "Concevoir développer et tester des applications dans des environnements spécifiques",
+          "description": "Modéliser de manière technique une application d’entreprise en utilisant des méthodes et outils standards : architecture, interface personne système, systèmes de gestion de données, composants.|Mettre en place et maintenir l’environnement de développement logiciel et documenter le logiciel produit.|Identifier, utiliser et évaluer des outils de gestion du logiciel (analyse de performance, tests, pipeline CI/CD, …).|Développer des applications back-end multi-tiers (bases de données, serveur d’application, API, WEB Services, ...)."
         }
       }
     },
-    "rncp": {
-      "RNCP39490BC01": {
-        "title": "Mettre en œuvre les usages avancés et spécialisés des outils numériques",
-        "description": "Se servir de manière autonome des outils de développement informatique. (Ex: IDE, SGBD, plateformes DevOps)."
-      },
-      "RNCP39490BC02": {
-        "title": "Mobiliser et produire des savoirs hautement spécialisés",
-        "description": "# Mener un travail de recherche dans un domaine en vue d’accomplir une/des tâches dans un domaine inexploré.|Résoudre des problématiques terrains en analysant les impacts potentiels sur le fonctionnement courant des outils, et en optimisant les processus existants."
-      },
-      "RNCP39490BC03": {
-        "title": "Mettre en œuvre une communication spécialisée pour le transfert de connaissances",
-        "description": "Mener des échanges/réunions pour présenter des travaux d’états de l’art portant sur des sujets complexes/ de développement/ travaux finalisés.|Elaborer une documentation détaillée quant à des processus existants afin de permettre un transfert de compétences plus fluide."
-      },
-      "RNCP39490BC04": {
-        "title": "Contribuer à la transformation en contexte professionnel",
-        "description": "Conduire un projet informatique ( conception, pilotage, coordination d’équipe, mise en œuvre et gestion, évaluation, diffusion).|Analyser ses actions en situation professionnelle, s’autoévaluer pour améliorer sa pratique dans le cadre d'une démarche qualité."
-      },
-      "RNCP39490BC07": {
-        "title": "Conduire des projets d’ingénierie numérique",
-        "description": "Définir une stratégie de tests, réaliser les tests, établir la recette et les mettre en œuvre.|Définir, adapter et mettre en œuvre une méthode de gestion de projet."
-      },
-      "RNCP39490BC08": {
-        "title": "Concevoir développer et tester des applications dans des environnements spécifiques",
-        "description": "Modéliser de manière technique une application d’entreprise en utilisant des méthodes et outils standards : architecture, interface personne système, systèmes de gestion de données, composants.|Mettre en place et maintenir l’environnement de développement logiciel et documenter le logiciel produit.|Identifier, utiliser et évaluer des outils de gestion du logiciel (analyse de performance, tests, pipeline CI/CD, …).|Développer des applications back-end multi-tiers (bases de données, serveur d’application, API, WEB Services, ...)."
-      }
+    "contact": {
+      "title": "Contact",
+      "description": "Si vous souhaitez me contacter pour discuter d'opportunités professionnelles, de collaborations ou de projets, n'hésitez pas à m'envoyer un message."
     }
   },
-  "contact": {
-    "title": "Contact",
-    "description": "Si vous souhaitez me contacter pour discuter d'opportunités professionnelles, de collaborations ou de projets, n'hésitez pas à m'envoyer un message."
+  "experience": {
+    "isagri": {
+      "title": "Spotifarm"
+    },
+    "amsilab": {
+      "title": "AmsiLab"
+    },
+    "cgi": {
+      "title": "CGI"
+    }
   },
   "footer": {
     "copyright": "© 2025 Anddy Labrut"

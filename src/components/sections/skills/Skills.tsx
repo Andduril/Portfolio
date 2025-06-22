@@ -6,7 +6,7 @@ import SkillTabs from './SkillTabs';
 import SkillTab from './SkillTab';
 
 const Skills: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {
-  const t = await getTranslations('skills');
+  const t = await getTranslations('home.skills');
 
   return (
     <section className={cn('relative flex flex-col gap-4 w-full max-w-full', className)} {...props}>

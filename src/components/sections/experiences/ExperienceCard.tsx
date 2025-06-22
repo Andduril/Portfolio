@@ -32,8 +32,8 @@ const getColor = (type: ExperienceType): string => {
 const ExperienceCard: FC<ExperienceCardProps> = ({ type, imagePath }) => {
   const [open, setOpen] = useState<boolean>();
   const [slideIndex, setSlideIndex] = useState<number>(0);
-  const t = useTranslations(`experiences.content.${type}`);
-  const tExp = useTranslations('experiences');
+  const t = useTranslations(`home.experiences.content.${type}`);
+  const tExp = useTranslations('home.experiences');
 
   const [sliderRef, sliderInstance] = useKeenSlider<HTMLDivElement>({
     loop: false,

@@ -4,7 +4,7 @@ import { ComponentPropsWithoutRef, FC } from 'react';
 import { cn } from '@sglara/cn';
 
 const Experiences: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {
-  const t = await getTranslations('experiences');
+  const t = await getTranslations('home.experiences');
 
   return (
     <section className={cn('flex flex-col items-center gap-3 relative', className)} {...props}>

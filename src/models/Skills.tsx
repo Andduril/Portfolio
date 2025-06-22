@@ -15,12 +15,14 @@ export const rncpKeys = [
 export type Rncp = (typeof rncpKeys)[number];
 
 export type SkillsMessages = {
-  skills: {
-    title: string;
-    content: {
-      [K in Skill]: {
-        title: string;
-        content: Record<string, string>;
+  home: {
+    skills: {
+      title: string;
+      content: {
+        [K in Skill]: {
+          title: string;
+          content: Record<string, string>;
+        };
       };
     };
   };

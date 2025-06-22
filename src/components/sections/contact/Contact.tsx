@@ -5,7 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { ComponentPropsWithoutRef, FC } from 'react';
 
 const Contact: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {
-  const t = await getTranslations('contact');
+  const t = await getTranslations('home.contact');
 
   return (
     <section className={cn('flex flex-col items-center gap-4', className)} {...props}>

@@ -12,7 +12,7 @@ type RncpCardProps = {
 
 const RncpCard: FC<RncpCardProps> = ({ name }) => {
   const [open, setOpen] = useState<boolean>(false);
-  const t = useTranslations(`skills.rncp.${name}`);
+  const t = useTranslations(`home.skills.rncp.${name}`);
 
   const handleClick = () => {
     setOpen(!open);

@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import StatisticCard from './StatisticCard';
 
 const Statistics = async () => {
-  const t = await getTranslations('presentation.statistics');
+  const t = await getTranslations('home.presentation.statistics');
 
   return (
     <ul className="flex flex-row flex-wrap justify-around gap-4">

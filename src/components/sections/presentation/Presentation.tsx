@@ -6,7 +6,7 @@ import DownloadIcon from '@/components/icons/DownloadIcon';
 import Card from '@/components/ui/Card';
 
 const Presentation = async () => {
-  const t = await getTranslations('presentation');
+  const t = await getTranslations('home.presentation');
   const locale = await getLocale();
 
   return (

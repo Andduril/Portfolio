@@ -1,236 +1,250 @@
 {
   "header": {
+    "title": "Anddy Labrut",
     "navigation": {
       "projects": "Projects",
       "contact": "Contact"
     }
   },
-  "presentation": {
-    "firstName": "Anddy",
-    "lastName": "Labrut",
-    "title": "Full Stack Web Developer",
-    "statistics": {
-      "yearsOfExperience": "Years of Experience",
-      "yearsOfStudies": "Years of Studies",
-      "degreesEarned": "Degrees Earned"
-    },
-    "curriculum": "My Resume"
-  },
-  "description": {
-    "title": "About Me",
-    "content": "I am a Full Stack Web Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals. I have experience in developing web applications, managing databases, and integrating third-party services. My goal is to continue learning and improving in the field of web development."
-  },
-  "formations": {
-    "title": "Education",
-    "dut": {
-      "title": "Associate Degree in Computer Science (DUT Informatique)",
-      "description": "A two-year technical degree focusing on computer science, covering programming, databases, and web development.",
-      "institution": "Université Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2019",
-      "endYear": "2021"
-    },
-    "bachelor": {
-      "title": "Bachelor's Degree in Computer Science (Licence Informatique)",
-      "description": "A professional bachelor's degree specializing in web design, content creation, and digital production.",
-      "institution": "Université Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2021",
-      "endYear": "2022"
-    },
-    "master": {
-      "title": "Master’s Degree in IT & Business Management (MIAGE)",
-      "description": "A master's degree in Computer Science focusing on Information Systems Management, combining technical and managerial skills.",
-      "institution": "Université de Picardie Jules Verne",
-      "location": "Amiens, France",
-      "startYear": "2023",
-      "endYear": "2025"
-    }
-  },
-  "experiences": {
-    "title": "Experiences",
-    "description": "I have worked on various projects, both personal and professional, that have allowed me to develop my skills in web development. My experience includes working with modern frameworks, databases, and cloud technologies.",
-    "languages": "Languages",
-    "frameworks": "Frameworks",
-    "databases": "Databases",
-    "tools": "Tools",
-    "cloud": "Cloud",
-    "content": {
-      "isagri": {
-        "title": "ISAGRI",
-        "jobTitle": "Web Developer",
-        "description": "A leading company in agricultural software solutions, where I contributed to the development of web applications.",
-        "location": "Beauvais, France",
-        "startYear": "2023",
-        "startMonth": "September",
-        "endYear": "2025",
-        "endMonth": "September",
-        "technologies": {
-          "languages": "JavaScript|TypeScript|C#|SQL",
-          "frameworks": "React|ASP.NET",
-          "databases": "SqlServer",
-          "tools": "Git|Azure DevOps",
-          "cloud": "Azure"
-        }
+  "home": {
+    "presentation": {
+      "firstName": "Anddy",
+      "lastName": "Labrut",
+      "title": "Full Stack Web Developer",
+      "statistics": {
+        "yearsOfExperience": "Years of Experience",
+        "yearsOfStudies": "Years of Studies",
+        "degreesEarned": "Degrees Earned"
       },
-      "amsilab": {
-        "title": "AmsiLab",
-        "jobTitle": "Web Developer Intern",
-        "description": "A research lab focused on innovative software solutions, where I worked on various projects related to web technologies.",
+      "curriculum": "My Resume"
+    },
+    "description": {
+      "title": "About Me",
+      "content": "I am a Full Stack Web Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals. I have experience in developing web applications, managing databases, and integrating third-party services. My goal is to continue learning and improving in the field of web development."
+    },
+    "formations": {
+      "title": "Education",
+      "dut": {
+        "title": "Associate Degree in Computer Science (DUT Informatique)",
+        "description": "A two-year technical degree focusing on computer science, covering programming, databases, and web development.",
+        "institution": "Université Picardie Jules Verne",
         "location": "Amiens, France",
-        "startYear": "2022",
-        "startMonth": "May",
-        "endYear": "2022",
-        "endMonth": "August",
-        "technologies": {
-          "languages": "JavaScript|PHP",
-          "frameworks": "React|Laravel",
-          "databases": "MySQL",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
+        "startYear": "2019",
+        "endYear": "2021"
+      },
+      "bachelor": {
+        "title": "Bachelor's Degree in Computer Science (Licence Informatique)",
+        "description": "A professional bachelor's degree specializing in web design, content creation, and digital production.",
+        "institution": "Université Picardie Jules Verne",
+        "location": "Amiens, France",
+        "startYear": "2021",
+        "endYear": "2022"
+      },
+      "master": {
+        "title": "Master’s Degree in IT & Business Management (MIAGE)",
+        "description": "A master's degree in Computer Science focusing on Information Systems Management, combining technical and managerial skills.",
+        "institution": "Université de Picardie Jules Verne",
+        "location": "Amiens, France",
+        "startYear": "2023",
+        "endYear": "2025"
+      }
+    },
+    "experiences": {
+      "title": "Experiences",
+      "description": "I have worked on various projects, both personal and professional, that have allowed me to develop my skills in web development. My experience includes working with modern frameworks, databases, and cloud technologies.",
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "databases": "Databases",
+      "tools": "Tools",
+      "cloud": "Cloud",
+      "content": {
+        "isagri": {
+          "title": "ISAGRI",
+          "jobTitle": "Web Developer",
+          "description": "A leading company in agricultural software solutions, where I contributed to the development of web applications.",
+          "location": "Beauvais, France",
+          "startYear": "2023",
+          "startMonth": "September",
+          "endYear": "2025",
+          "endMonth": "September",
+          "technologies": {
+            "languages": "JavaScript|TypeScript|C#|SQL",
+            "frameworks": "React|ASP.NET",
+            "databases": "SqlServer",
+            "tools": "Git|Azure DevOps",
+            "cloud": "Azure"
+          }
+        },
+        "amsilab": {
+          "title": "AmsiLab",
+          "jobTitle": "Web Developer Intern",
+          "description": "A research lab focused on innovative software solutions, where I worked on various projects related to web technologies.",
+          "location": "Amiens, France",
+          "startYear": "2022",
+          "startMonth": "May",
+          "endYear": "2022",
+          "endMonth": "August",
+          "technologies": {
+            "languages": "JavaScript|PHP",
+            "frameworks": "React|Laravel",
+            "databases": "MySQL",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          }
+        },
+        "cgi": {
+          "title": "CGI",
+          "jobTitle": "IT Consultant Intern",
+          "description": "A global IT and business consulting services firm, where I gained experience in large-scale software development projects.",
+          "location": "Arras, France",
+          "startYear": "2022",
+          "startMonth": "April",
+          "endYear": "2022",
+          "endMonth": "May",
+          "technologies": {
+            "languages": "ABAP|TypeScript|PHP",
+            "frameworks": "SAP UI5|React",
+            "databases": "SAP HANA|MySQL",
+            "tools": "Git|Jenkins",
+            "cloud": "SAP Cloud Platform"
+          }
         }
       },
-      "cgi": {
-        "title": "CGI",
-        "jobTitle": "IT Consultant Intern",
-        "description": "A global IT and business consulting services firm, where I gained experience in large-scale software development projects.",
-        "location": "Arras, France",
-        "startYear": "2022",
-        "startMonth": "April",
-        "endYear": "2022",
-        "endMonth": "May",
-        "technologies": {
-          "languages": "ABAP|TypeScript|PHP",
-          "frameworks": "SAP UI5|React",
-          "databases": "SAP HANA|MySQL",
-          "tools": "Git|Jenkins",
-          "cloud": "SAP Cloud Platform"
+      "seeMore": "See More"
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "I have worked on various personal and collaborative projects that showcase my skills in web development.",
+      "content": {
+        "alistigo": {
+          "title": "Alistigo",
+          "description": "A web application for managing and sharing lists of items, built with React and Node.js.",
+          "technologies": {
+            "languages": "JavaScript|TypeScript",
+            "frameworks": "React|Node.js",
+            "databases": "MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "AWS"
+          },
+          "link": "https://alistigo.com"
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "description": "My personal portfolio website showcasing my skills, projects, and experiences.",
+          "technologies": {
+            "languages": "HTML|CSS|JavaScript",
+            "frameworks": "React",
+            "databases": "None",
+            "tools": "Git|Webpack",
+            "cloud": "Netlify"
+          },
+          "link": "https://anddy-labrut.com"
+        },
+        "chatApplication": {
+          "title": "Chat Application",
+          "description": "A real-time chat application built with React and Socket.io, allowing users to communicate in real-time.",
+          "technologies": {
+            "languages": "JavaScript|TypeScript",
+            "frameworks": "React|Socket.io",
+            "databases": "MongoDB",
+            "tools": "Git|Docker",
+            "cloud": "Heroku"
+          },
+          "link": "https://chat-app.anddy-labrut.com"
         }
       }
     },
-    "seeMore": "See More"
-  },
-  "projects": {
-    "title": "Projects",
-    "description": "I have worked on various personal and collaborative projects that showcase my skills in web development.",
-    "content": {
-      "alistigo": {
-        "title": "Alistigo",
-        "description": "A web application for managing and sharing lists of items, built with React and Node.js.",
-        "technologies": {
-          "languages": "JavaScript|TypeScript",
-          "frameworks": "React|Node.js",
-          "databases": "MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "AWS"
+    "skills": {
+      "title": "Skills",
+      "content": {
+        "programmingLanguages": {
+          "title": "Programming Languages",
+          "content": {
+            "javascript": "JavaScript",
+            "typescript": "TypeScript",
+            "php": "PHP",
+            "csharp": "C#",
+            "sql": "SQL",
+            "html": "HTML",
+            "css": "CSS",
+            "rust": "Rust"
+          }
         },
-        "link": "https://alistigo.com"
-      },
-      "portfolio": {
-        "title": "Portfolio",
-        "description": "My personal portfolio website showcasing my skills, projects, and experiences.",
-        "technologies": {
-          "languages": "HTML|CSS|JavaScript",
-          "frameworks": "React",
-          "databases": "None",
-          "tools": "Git|Webpack",
-          "cloud": "Netlify"
+        "frameworks": {
+          "title": "Frameworks",
+          "content": {
+            "angular": "Angular",
+            "react": "React",
+            "vue": "Vue.js",
+            "laravel": "Laravel",
+            "aspNet": "ASP.NET"
+          }
         },
-        "link": "https://anddy-labrut.com"
-      },
-      "chatApplication": {
-        "title": "Chat Application",
-        "description": "A real-time chat application built with React and Socket.io, allowing users to communicate in real-time.",
-        "technologies": {
-          "languages": "JavaScript|TypeScript",
-          "frameworks": "React|Socket.io",
-          "databases": "MongoDB",
-          "tools": "Git|Docker",
-          "cloud": "Heroku"
+        "softSkills": {
+          "title": "Soft Skills",
+          "content": {
+            "communication": "Communication",
+            "teamwork": "Teamwork",
+            "problemSolving": "Problem Solving",
+            "adaptability": "Adaptability",
+            "timeManagement": "Time Management",
+            "criticalThinking": "Critical Thinking"
+          }
         },
-        "link": "https://chat-app.anddy-labrut.com"
-      }
-    }
-  },
-  "skills": {
-    "title": "Skills",
-    "content": {
-      "programmingLanguages": {
-        "title": "Programming Languages",
-        "content": {
-          "javascript": "JavaScript",
-          "typescript": "TypeScript",
-          "php": "PHP",
-          "csharp": "C#",
-          "sql": "SQL",
-          "html": "HTML",
-          "css": "CSS",
-          "rust": "Rust"
-        }
-      },
-      "frameworks": {
-        "title": "Frameworks",
-        "content": {
-          "angular": "Angular",
-          "react": "React",
-          "vue": "Vue.js",
-          "laravel": "Laravel",
-          "aspNet": "ASP.NET"
-        }
-      },
-      "softSkills": {
-        "title": "Soft Skills",
-        "content": {
-          "communication": "Communication",
-          "teamwork": "Teamwork",
-          "problemSolving": "Problem Solving",
-          "adaptability": "Adaptability",
-          "timeManagement": "Time Management",
-          "criticalThinking": "Critical Thinking"
+        "rncp": {
+          "title": "RNCP Certifications",
+          "content": {
+            "RNCP39490BC01": "RNCP39490BC01",
+            "RNCP39490BC02": "RNCP39490BC02",
+            "RNCP39490BC03": "RNCP39490BC03",
+            "RNCP39490BC04": "RNCP39490BC04",
+            "RNCP39490BC07": "RNCP39490BC07",
+            "RNCP39490BC08": "RNCP39490BC08"
+          }
         }
       },
       "rncp": {
-        "title": "RNCP Certifications",
-        "content": {
-          "RNCP39490BC01": "RNCP39490BC01",
-          "RNCP39490BC02": "RNCP39490BC02",
-          "RNCP39490BC03": "RNCP39490BC03",
-          "RNCP39490BC04": "RNCP39490BC04",
-          "RNCP39490BC07": "RNCP39490BC07",
-          "RNCP39490BC08": "RNCP39490BC08"
+        "RNCP39490BC01": {
+          "title": "Implement advanced and specialized uses of digital tools",
+          "description": "Independently use software development tools (e.g., IDEs, DBMS, DevOps platforms)."
+        },
+        "RNCP39490BC02": {
+          "title": "Mobilize and produce highly specialized knowledge",
+          "description": "# Conduct research in a field to perform tasks in unexplored areas.|Solve real-world problems by analyzing the potential impacts on the current functioning of tools, and by optimizing existing processes."
+        },
+        "RNCP39490BC03": {
+          "title": "Implement specialized communication for knowledge transfer",
+          "description": "Lead discussions/meetings to present state-of-the-art work on complex topics, development projects, or completed deliverables.|Produce detailed documentation on existing processes to enable smoother skill transfer."
+        },
+        "RNCP39490BC04": {
+          "title": "Contribute to transformation in a professional context",
+          "description": "Lead an IT project (design, management, team coordination, implementation and administration, evaluation, dissemination).|Analyze one’s professional actions, perform self-assessments to improve practices as part of a quality approach."
+        },
+        "RNCP39490BC07": {
+          "title": "Manage digital engineering projects",
+          "description": "Define a testing strategy, perform tests, establish and implement acceptance testing.|Define, adapt, and apply a project management method."
+        },
+        "RNCP39490BC08": {
+          "title": "Design, develop and test applications in specific environments",
+          "description": "Technically model a business application using standard methods and tools: architecture, human-system interface, data management systems, components.|Set up and maintain the software development environment and document the produced software.|Identify, use, and evaluate software management tools (performance analysis, testing, CI/CD pipeline, etc.).|Develop multi-tier back-end applications (databases, application servers, APIs, web services, etc.)."
         }
       }
     },
-    "rncp": {
-      "RNCP39490BC01": {
-        "title": "Implement advanced and specialized uses of digital tools",
-        "description": "Independently use software development tools (e.g., IDEs, DBMS, DevOps platforms)."
-      },
-      "RNCP39490BC02": {
-        "title": "Mobilize and produce highly specialized knowledge",
-        "description": "# Conduct research in a field to perform tasks in unexplored areas.|Solve real-world problems by analyzing the potential impacts on the current functioning of tools, and by optimizing existing processes."
-      },
-      "RNCP39490BC03": {
-        "title": "Implement specialized communication for knowledge transfer",
-        "description": "Lead discussions/meetings to present state-of-the-art work on complex topics, development projects, or completed deliverables.|Produce detailed documentation on existing processes to enable smoother skill transfer."
-      },
-      "RNCP39490BC04": {
-        "title": "Contribute to transformation in a professional context",
-        "description": "Lead an IT project (design, management, team coordination, implementation and administration, evaluation, dissemination).|Analyze one’s professional actions, perform self-assessments to improve practices as part of a quality approach."
-      },
-      "RNCP39490BC07": {
-        "title": "Manage digital engineering projects",
-        "description": "Define a testing strategy, perform tests, establish and implement acceptance testing.|Define, adapt, and apply a project management method."
-      },
-      "RNCP39490BC08": {
-        "title": "Design, develop and test applications in specific environments",
-        "description": "Technically model a business application using standard methods and tools: architecture, human-system interface, data management systems, components.|Set up and maintain the software development environment and document the produced software.|Identify, use, and evaluate software management tools (performance analysis, testing, CI/CD pipeline, etc.).|Develop multi-tier back-end applications (databases, application servers, APIs, web services, etc.)."
-      }
+    "contact": {
+      "title": "Contact me",
+      "description": "If you would like to get in touch with me for professional opportunities, collaborations, or projects, feel free to send me a message. I am always open to discussing new ideas and opportunities."
     }
   },
-  "contact": {
-    "title": "Contact me",
-    "description": "If you would like to get in touch with me for professional opportunities, collaborations, or projects, feel free to send me a message. I am always open to discussing new ideas and opportunities."
+  "experience": {
+    "isagri": {
+      "title": "Spotifarm"
+    },
+    "amsilab": {
+      "title": "AmsiLab"
+    },
+    "cgi": {
+      "title": "CGI"
+    }
   },
   "footer": {
     "copyright": "© 2025 Anddy Labrut"

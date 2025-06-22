@@ -11,11 +11,11 @@ import Card from '@/components/ui/Card';
 import { getTranslations } from 'next-intl/server';
 
 const HomePage = async () => {
-  const t = await getTranslations('presentation');
+  const t = await getTranslations('home.presentation');
 
   return (
     <div className="flex flex-col items-center">
-      <main className="py-24 overflow-hidden max-w-sm">
+      <div className="py-12 overflow-hidden max-w-sm w-full">
         <div className="flex flex-col items-center px-2 gap-6">
           <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
             <Presentation />
@@ -33,15 +33,7 @@ const HomePage = async () => {
             <Contact />
           </div>
         </div>
-        {/* 
-        
-        
-        <Experiences />
-        <Projects />
-        <Contact /> */}
-      </main>
-      <Header />
-      <Footer />
+      </div>
     </div>
   );
 };

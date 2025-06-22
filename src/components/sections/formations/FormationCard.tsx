@@ -13,7 +13,7 @@ const getColor = (): string => {
 };
 
 const FormationCard: FC<FormationCardProps> = async ({ type }) => {
-  const t = await getTranslations(`formations.${type}`);
+  const t = await getTranslations(`home.formations.${type}`);
 
   return (
     <Card className={`bg-radial-[at_50%_0%] ${getColor()}`}>

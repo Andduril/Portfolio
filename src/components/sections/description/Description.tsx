@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
 const Description = async () => {
-  const t = await getTranslations('description');
+  const t = await getTranslations('home.description');
 
   return (
     <section className="flex flex-col items-center gap-2">

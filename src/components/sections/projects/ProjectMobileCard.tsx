@@ -19,7 +19,7 @@ const ProjectMobileCard: FC<ComponentPropsWithoutRef<'li'> & ProjectMobileCardPr
   className,
   ...props
 }) => {
-  const t = await getTranslations(`projects.content.${project}`);
+  const t = await getTranslations(`home.projects.content.${project}`);
 
   return (
     <Card className="p-0">

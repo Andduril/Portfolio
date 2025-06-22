@@ -6,6 +6,8 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import Background from '@/components/ui/Background';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -37,7 +39,13 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen bg-background text-font font-bold`}
       >
         <Background />
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <main className="min-h-screen relative">
+            <Header />
+            {children}
+            <Footer />
+          </main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
