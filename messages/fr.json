@@ -1,5 +1,5 @@
 {
-  "header" : {
+  "header": {
     "navigation": {
       "projects": "Projets",
       "contact": "Contact"
@@ -163,8 +163,7 @@
           "csharp": "C#",
           "html": "HTML",
           "css": "CSS",
-          "sql": "SQL",
-          "bash": "Bash"
+          "sql": "SQL"
         }
       },
       "frameworks": {
@@ -175,7 +174,6 @@
           "vue": "Vue.js",
           "nodejs": "Node.js",
           "laravel": "Laravel",
-          "symfony": "Symfony",
           "aspNet": "ASP.NET"
         }
       },
@@ -193,9 +191,39 @@
       "rncp": {
         "title": "Compétences RNCP",
         "content": {
-          "RNCP39490BC02" : "RNCP39490BC02",
-          "RNCP39490BC01" : "RNCP39490BC01"
+          "RNCP39490BC01": "RNCP39490BC01",
+          "RNCP39490BC02": "RNCP39490BC02",
+          "RNCP39490BC03": "RNCP39490BC03",
+          "RNCP39490BC04": "RNCP39490BC04",
+          "RNCP39490BC07": "RNCP39490BC07",
+          "RNCP39490BC08": "RNCP39490BC08"
         }
+      }
+    },
+    "rncp": {
+      "RNCP39490BC01": {
+        "title": "Mettre en œuvre les usages avancés et spécialisés des outils numériques",
+        "description": "Se servir de manière autonome des outils de développement informatique. (Ex: IDE, SGBD, plateformes DevOps)."
+      },
+      "RNCP39490BC02": {
+        "title": "Mobiliser et produire des savoirs hautement spécialisés",
+        "description": "# Mener un travail de recherche dans un domaine en vue d’accomplir une/des tâches dans un domaine inexploré.|Résoudre des problématiques terrains en analysant les impacts potentiels sur le fonctionnement courant des outils, et en optimisant les processus existants."
+      },
+      "RNCP39490BC03": {
+        "title": "Mettre en œuvre une communication spécialisée pour le transfert de connaissances",
+        "description": "Mener des échanges/réunions pour présenter des travaux d’états de l’art portant sur des sujets complexes/ de développement/ travaux finalisés.|Elaborer une documentation détaillée quant à des processus existants afin de permettre un transfert de compétences plus fluide."
+      },
+      "RNCP39490BC04": {
+        "title": "Contribuer à la transformation en contexte professionnel",
+        "description": "Conduire un projet informatique ( conception, pilotage, coordination d’équipe, mise en œuvre et gestion, évaluation, diffusion).|Analyser ses actions en situation professionnelle, s’autoévaluer pour améliorer sa pratique dans le cadre d'une démarche qualité."
+      },
+      "RNCP39490BC07": {
+        "title": "Conduire des projets d’ingénierie numérique",
+        "description": "Définir une stratégie de tests, réaliser les tests, établir la recette et les mettre en œuvre.|Définir, adapter et mettre en œuvre une méthode de gestion de projet."
+      },
+      "RNCP39490BC08": {
+        "title": "Concevoir développer et tester des applications dans des environnements spécifiques",
+        "description": "Modéliser de manière technique une application d’entreprise en utilisant des méthodes et outils standards : architecture, interface personne système, systèmes de gestion de données, composants.|Mettre en place et maintenir l’environnement de développement logiciel et documenter le logiciel produit.|Identifier, utiliser et évaluer des outils de gestion du logiciel (analyse de performance, tests, pipeline CI/CD, …).|Développer des applications back-end multi-tiers (bases de données, serveur d’application, API, WEB Services, ...)."
       }
     }
   },

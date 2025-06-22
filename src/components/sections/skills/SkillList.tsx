@@ -1,8 +1,10 @@
 'use client';
 
-import { Skill, SkillsMessages } from '@/models/Skills';
+import { Rncp, Skill, SkillsMessages, softSkillIcons } from '@/models/Skills';
 import { useMessages, useTranslations } from 'next-intl';
 import { ComponentPropsWithoutRef, FC } from 'react';
+import SkillIcon from './SkillIcon';
+import RncpCard from './RncpCard';
 
 type SkillListProps = {
   skill: Skill;
@@ -19,7 +21,27 @@ const SkillList: FC<SkillListProps & ComponentPropsWithoutRef<'ul'>> = ({ skill,
       {keys.map((key, index) => {
         const value = content[key];
 
-        return <li key={index}>{value}</li>;
+        if (skill === 'rncp') {
+          // Cast value to Rncp type
+          const rncpValue = value as Rncp;
+
+          return (
+            <li key={index}>
+              <RncpCard name={rncpValue} />
+            </li>
+          );
+        }
+
+        return (
+          <li key={index} className="size-16 flex flex-col justify-around items-center gap-2 mb-2">
+            {skill == 'softSkills' ? (
+              <div className="size-6 shrink-0">{softSkillIcons[key]}</div>
+            ) : (
+              <SkillIcon alt={`${value} icon`} name={key} />
+            )}
+            <span className="text-xs text-center">{value}</span>
+          </li>
+        );
       })}
     </ul>
   );

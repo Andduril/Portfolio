@@ -1,12 +1,13 @@
-import { SVGProps } from 'react';
+import { cn } from '@sglara/cn';
+import { FC, SVGProps } from 'react';
 
-const CodeIcon = (props: SVGProps<SVGSVGElement>) => (
+const CodeIcon: FC<SVGProps<SVGSVGElement>> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     stroke="currentColor"
     strokeWidth={1.5}
-    className="size-6"
+    className={cn('size-6', className)}
     viewBox="0 0 24 24"
     {...props}
   >

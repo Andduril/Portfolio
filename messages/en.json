@@ -1,5 +1,5 @@
 {
-  "header" : {
+  "header": {
     "navigation": {
       "projects": "Projects",
       "contact": "Contact"
@@ -137,7 +137,6 @@
           "cloud": "Netlify"
         },
         "link": "https://anddy-labrut.com"
-
       },
       "chatApplication": {
         "title": "Chat Application",
@@ -165,7 +164,8 @@
           "csharp": "C#",
           "sql": "SQL",
           "html": "HTML",
-          "css": "CSS"
+          "css": "CSS",
+          "rust": "Rust"
         }
       },
       "frameworks": {
@@ -175,7 +175,7 @@
           "react": "React",
           "vue": "Vue.js",
           "laravel": "Laravel",
-          "aspnet": "ASP.NET"
+          "aspNet": "ASP.NET"
         }
       },
       "softSkills": {
@@ -192,9 +192,39 @@
       "rncp": {
         "title": "RNCP Certifications",
         "content": {
-          "RNCP39490BC02" : "RNCP39490BC02",
-          "RNCP39490BC01" : "RNCP39490BC01"
+          "RNCP39490BC01": "RNCP39490BC01",
+          "RNCP39490BC02": "RNCP39490BC02",
+          "RNCP39490BC03": "RNCP39490BC03",
+          "RNCP39490BC04": "RNCP39490BC04",
+          "RNCP39490BC07": "RNCP39490BC07",
+          "RNCP39490BC08": "RNCP39490BC08"
         }
+      }
+    },
+    "rncp": {
+      "RNCP39490BC01": {
+        "title": "Implement advanced and specialized uses of digital tools",
+        "description": "Independently use software development tools (e.g., IDEs, DBMS, DevOps platforms)."
+      },
+      "RNCP39490BC02": {
+        "title": "Mobilize and produce highly specialized knowledge",
+        "description": "# Conduct research in a field to perform tasks in unexplored areas.|Solve real-world problems by analyzing the potential impacts on the current functioning of tools, and by optimizing existing processes."
+      },
+      "RNCP39490BC03": {
+        "title": "Implement specialized communication for knowledge transfer",
+        "description": "Lead discussions/meetings to present state-of-the-art work on complex topics, development projects, or completed deliverables.|Produce detailed documentation on existing processes to enable smoother skill transfer."
+      },
+      "RNCP39490BC04": {
+        "title": "Contribute to transformation in a professional context",
+        "description": "Lead an IT project (design, management, team coordination, implementation and administration, evaluation, dissemination).|Analyze one’s professional actions, perform self-assessments to improve practices as part of a quality approach."
+      },
+      "RNCP39490BC07": {
+        "title": "Manage digital engineering projects",
+        "description": "Define a testing strategy, perform tests, establish and implement acceptance testing.|Define, adapt, and apply a project management method."
+      },
+      "RNCP39490BC08": {
+        "title": "Design, develop and test applications in specific environments",
+        "description": "Technically model a business application using standard methods and tools: architecture, human-system interface, data management systems, components.|Set up and maintain the software development environment and document the produced software.|Identify, use, and evaluate software management tools (performance analysis, testing, CI/CD pipeline, etc.).|Develop multi-tier back-end applications (databases, application servers, APIs, web services, etc.)."
       }
     }
   },

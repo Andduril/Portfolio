@@ -11,7 +11,7 @@ const Skills: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...p
   return (
     <section className={cn('relative flex flex-col gap-4 w-full max-w-full', className)} {...props}>
       <h5 className="text-3xl text-center">{t('title')}</h5>
-      <Card className="w-full flex flex-row overflow-x-hidden">
+      <Card className="w-full flex flex-row overflow-x-hidden p-1 py-2">
         <SkillTabs
           tabs={[
             { key: 'programmingLanguages', content: <SkillTab skill="programmingLanguages" /> },
