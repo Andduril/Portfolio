@@ -6,6 +6,7 @@ import Experiences from '@/components/sections/experiences/Experiences';
 import Formations from '@/components/sections/formations/Formations';
 import Presentation from '@/components/sections/presentation/Presentation';
 import Projects from '@/components/sections/projects/Projects';
+import Skills from '@/components/sections/skills/Skills';
 import Card from '@/components/ui/Card';
 import { getTranslations } from 'next-intl/server';
 
@@ -23,6 +24,7 @@ const HomePage = async () => {
             <Description />
           </Card>
           <Formations className="max-w-full w-full sm:w-auto" />
+          <Skills />
           <Experiences className="max-w-full w-full sm:w-auto" />
           <Card className="max-w-full w-full sm:w-auto">
             <Projects />

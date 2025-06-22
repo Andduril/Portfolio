@@ -149,6 +149,56 @@
       }
     }
   },
+  "skills": {
+    "title": "Compétences",
+    "content": {
+      "programmingLanguages": {
+        "title": "Langages de programmation",
+        "content": {
+          "javascript": "JavaScript",
+          "typescript": "TypeScript",
+          "php": "PHP",
+          "java": "Java",
+          "python": "Python",
+          "csharp": "C#",
+          "html": "HTML",
+          "css": "CSS",
+          "sql": "SQL",
+          "bash": "Bash"
+        }
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "content": {
+          "angular": "Angular",
+          "react": "React",
+          "vue": "Vue.js",
+          "nodejs": "Node.js",
+          "laravel": "Laravel",
+          "symfony": "Symfony",
+          "aspNet": "ASP.NET"
+        }
+      },
+      "softSkills": {
+        "title": "Compétences interpersonnelles",
+        "content": {
+          "communication": "Communication",
+          "teamwork": "Travail en équipe",
+          "problemSolving": "Résolution de problèmes",
+          "adaptability": "Adaptabilité",
+          "timeManagement": "Gestion du temps",
+          "criticalThinking": "Pensée critique"
+        }
+      },
+      "rncp": {
+        "title": "Compétences RNCP",
+        "content": {
+          "RNCP39490BC02" : "RNCP39490BC02",
+          "RNCP39490BC01" : "RNCP39490BC01"
+        }
+      }
+    }
+  },
   "contact": {
     "title": "Contact",
     "description": "Si vous souhaitez me contacter pour discuter d'opportunités professionnelles, de collaborations ou de projets, n'hésitez pas à m'envoyer un message."

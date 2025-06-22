@@ -153,6 +153,51 @@
       }
     }
   },
+  "skills": {
+    "title": "Skills",
+    "content": {
+      "programmingLanguages": {
+        "title": "Programming Languages",
+        "content": {
+          "javascript": "JavaScript",
+          "typescript": "TypeScript",
+          "php": "PHP",
+          "csharp": "C#",
+          "sql": "SQL",
+          "html": "HTML",
+          "css": "CSS"
+        }
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "content": {
+          "angular": "Angular",
+          "react": "React",
+          "vue": "Vue.js",
+          "laravel": "Laravel",
+          "aspnet": "ASP.NET"
+        }
+      },
+      "softSkills": {
+        "title": "Soft Skills",
+        "content": {
+          "communication": "Communication",
+          "teamwork": "Teamwork",
+          "problemSolving": "Problem Solving",
+          "adaptability": "Adaptability",
+          "timeManagement": "Time Management",
+          "criticalThinking": "Critical Thinking"
+        }
+      },
+      "rncp": {
+        "title": "RNCP Certifications",
+        "content": {
+          "RNCP39490BC02" : "RNCP39490BC02",
+          "RNCP39490BC01" : "RNCP39490BC01"
+        }
+      }
+    }
+  },
   "contact": {
     "title": "Contact me",
     "description": "If you would like to get in touch with me for professional opportunities, collaborations, or projects, feel free to send me a message. I am always open to discussing new ideas and opportunities."
