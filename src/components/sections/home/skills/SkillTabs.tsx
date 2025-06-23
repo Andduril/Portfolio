@@ -18,7 +18,7 @@ type SkillTabsProps = {
 };
 
 const getSkillIcon = (skill: Skill, isActive?: boolean) => {
-  const iconClass = isActive ? 'text-primary' : 'text-gray-500';
+  const iconClass = isActive ? 'text-primary dark:text-slate-50' : 'text-gray-500';
 
   switch (skill) {
     case 'programmingLanguages':

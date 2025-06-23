@@ -13,20 +13,15 @@ type LinkOnlyProps = {
 
 export type ButtonProps = ButtonOnlyProps | LinkOnlyProps;
 
-/*
-beginColor: '#c64dbf',
-  endColor: '#391748',
-*/
+const baseClass =
+  'cursor-pointer inline-flex items-center justify-center px-4 py-2 rounded-full transition-all duration-300 font-medium text-white shadow-md bg-gradient-to-r from-emerald-400 to-teal-500 hover:brightness-110 hover:saturate-150';
 
 const Button: FC<ButtonProps> = ({ children, className, href, ...props }) => {
   if (href) {
     return (
       <Link
         href={href}
-        className={cn(
-          'cursor-pointer flex items-center justify-center py-1 px-3 rounded-4xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br',
-          className
-        )}
+        className={cn(baseClass, className)}
         {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
@@ -36,10 +31,7 @@ const Button: FC<ButtonProps> = ({ children, className, href, ...props }) => {
 
   return (
     <button
-      className={cn(
-        'cursor-pointer flex items-center justify-center py-1 px-3 rounded-4xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br',
-        className
-      )}
+      className={cn(baseClass, className)}
       {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}

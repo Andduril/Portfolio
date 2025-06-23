@@ -1,10 +1,17 @@
 @import 'tailwindcss';
 
-@theme {
-  --color-background: #191919;
-  --color-font: #fcfcfc;
+@custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-font: #fcfcfc;
   --color-card: #212121;
+
+  --color-primary: #613fe8;
+}
+
+:root {
+  --font-sans: var(--font-inter-sans);
+  --font-mono: var(--font-mono);
 }
 
 /* width */

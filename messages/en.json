@@ -237,7 +237,10 @@
   },
   "experience": {
     "isagri": {
-      "title": "Spotifarm"
+      "title": "My experience at",
+      "paragraph1": "",
+      "paragraph2": "",
+      "contributionsTitle": "My contributions"
     },
     "amsilab": {
       "title": "AmsiLab"

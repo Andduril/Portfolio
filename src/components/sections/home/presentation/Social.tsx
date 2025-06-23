@@ -10,7 +10,10 @@ export type SocialProps = {
 
 const Social: FC<SocialProps> = ({ link, size, alt, src }) => {
   return (
-    <li className="rounded-full overflow-hidden cursor-pointer">
+    <li
+      className="rounded-full overflow-hidden cursor-pointer inline-flex items-center justify-center"
+      style={{ width: size || 32, height: size || 32 }}
+    >
       <a href={link} target="_blank" rel="noopener noreferrer">
         <Image src={src} alt={alt} width={size || 32} height={size || 32} />
       </a>

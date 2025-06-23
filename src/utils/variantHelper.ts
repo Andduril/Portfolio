@@ -1,4 +1,4 @@
-import { Variant } from '@/components/sections/experiences/TechBadge';
+import { Variant } from '@/components/sections/home/experiences/TechBadge';
 
 export const getVariantFromTechnology = (tech: string): Variant => {
   const normalized = tech.toLowerCase();

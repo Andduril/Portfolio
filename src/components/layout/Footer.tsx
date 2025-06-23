@@ -1,11 +1,16 @@
 import { getTranslations } from 'next-intl/server';
+import Glass from '../ui/Glass';
+import { ComponentProps, FC } from 'react';
+import { cn } from '@sglara/cn';
 
-const Footer = async () => {
+const Footer: FC<ComponentProps<'section'>> = async ({ className, ...props }) => {
   const t = await getTranslations('footer');
 
   return (
-    <footer className="w-full font-normal bg-black/20 text-white py-8 flex justify-center items-center">
-      <p className="text-sm">{t('copyright')}</p>
+    <footer className={cn('w-full relative', className)} {...props}>
+      <Glass opacity={20} className="size-full py-8 flex justify-center items-center rounded-none">
+        <p className="text-sm">{t('copyright')}</p>
+      </Glass>
     </footer>
   );
 };

@@ -7,9 +7,9 @@ const Formations: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, 
   const t = await getTranslations('home.formations');
 
   return (
-    <section className={cn('flex flex-col items-center gap-3 relative', className)} {...props}>
-      <h2 className="text-3xl">{t('title')}</h2>
-      <ul className="flex flex-col gap-4 w-full">
+    <section className={cn('relative flex flex-col items-center gap-3', className)} {...props}>
+      <h2 className="text-2xl text-primary dark:text-slate-50 font-bold">{t('title')}</h2>
+      <ul className="flex flex-col gap-4 w-full p-3">
         <FormationCard type="master" />
         <FormationCard type="bachelor" />
         <FormationCard type="dut" />

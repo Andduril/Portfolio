@@ -1,27 +1,55 @@
 'use client';
 
 import { setLang } from '@/actions/setLang';
+import { setTheme } from '@/actions/setTheme';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { FC } from 'react';
+import Glass from '../ui/Glass';
 
-const Header = () => {
+type HeaderProps = {
+  theme: string;
+  lang: string;
+};
+
+const Header: FC<HeaderProps> = ({ theme, lang }) => {
   const t = useTranslations('header');
-  const locale = useLocale();
 
   const handleSettingsClick = () => {
-    setLang(locale === 'en' ? 'fr' : 'en');
+    setLang(lang === 'en' ? 'fr' : 'en');
+  };
+
+  const handleSetThemeClick = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
-    <header className="sticky z-50 top-0 w-full backdrop-blur-md bg-gradient-to-b from-[#4e1c60]/20 to-[#1b0823]/15 flex flex-row justify-between items-center p-2 px-3">
-      <Link href={'/'} className="text-md cursor-pointer">
-        {t('title')}
-      </Link>
-      <nav className="flex flex-row-reverse gap-2">
-        <button className="cursor-pointer" onClick={handleSettingsClick}>
-          {locale === 'en' ? '🇫🇷' : '🇬🇧'}
+    <header className="sticky z-50 top-0 w-full">
+      <Glass className="p-2 rounded-none flex flex-row items-center justify-between">
+        <Link
+          href={'/'}
+          className="text-md cursor-pointer text-primary dark:text-slate-50 font-bold"
+        >
+          {t('title')}
+        </Link>
+        <div className="flex flex-row gap-1">
+          <Glass opacity={20} className="cursor-pointer px-1" onClick={handleSetThemeClick}>
+            {theme === 'dark' ? '🌙' : '☀️'}
+          </Glass>
+          <Glass opacity={20} className="cursor-pointer px-1" onClick={handleSettingsClick}>
+            {lang === 'en' ? '🇫🇷' : '🇬🇧'}
+          </Glass>
+        </div>
+      </Glass>
+
+      {/* <nav className="flex flex-row-reverse gap-2">
+        <button className="cursor-pointer" onClick={handleSetThemeClick}>
+          {theme === 'dark' ? '🌙' : '☀️'}
         </button>
-      </nav>
+        <button className="cursor-pointer" onClick={handleSettingsClick}>
+          {lang === 'en' ? '🇫🇷' : '🇬🇧'}
+        </button>
+      </nav> */}
     </header>
   );
 };

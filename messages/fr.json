@@ -236,7 +236,10 @@
   },
   "experience": {
     "isagri": {
-      "title": "Spotifarm"
+      "title": "Mon experience chez",
+      "paragraph1": "Spotifarm est une application mobile développée par Isagri, destinée à accompagner les agriculteurs dans la gestion quotidienne de leurs parcelles. L’objectif principal de l’application est de fournir des recommandations précises et personnalisées sur les créneaux météo les plus favorables pour intervenir (traitements, semis, etc.). L’app s’appuie pour cela sur des données météo ultra-localisées et une cartographie fine des exploitations.",
+      "paragraph2": "Techniquement, Spotifarm combine géolocalisation, visualisation cartographique et traitement de données en temps réel pour offrir une expérience fluide et utile sur le terrain. L’interface a été pensée pour un usage mobile, avec une UX simple et réactive, adaptée aux contraintes des utilisateurs agricoles. L’application s’inscrit dans un environnement métier exigeant, où la fiabilité, la clarté des informations et la performance sont clés pour la prise de décision.",
+      "contributionsTitle": "Mes contributions"
     },
     "amsilab": {
       "title": "AmsiLab"

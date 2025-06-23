@@ -2,6 +2,7 @@
 
 import DownIcon from '@/components/icons/DownIcon';
 import Card from '@/components/ui/Card';
+import Glass from '@/components/ui/Glass';
 import { Rncp } from '@/models/Skills';
 import { useTranslations } from 'next-intl';
 import { FC, useState } from 'react';
@@ -19,7 +20,7 @@ const RncpCard: FC<RncpCardProps> = ({ name }) => {
   };
 
   return (
-    <Card className="flex flex-col gap-3 overflow-hidden">
+    <Glass opacity={20} className="flex flex-col gap-3 overflow-hidden p-4">
       <div className="flex flex-row items-center gap-1">
         <h6 className="text-xs">
           {name} - {t('title')}
@@ -40,7 +41,7 @@ const RncpCard: FC<RncpCardProps> = ({ name }) => {
             ))}
         </>
       )}
-    </Card>
+    </Glass>
   );
 };
 

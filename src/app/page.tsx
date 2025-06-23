@@ -1,39 +1,27 @@
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
-import Contact from '@/components/sections/contact/Contact';
-import Description from '@/components/sections/description/Description';
-import Experiences from '@/components/sections/experiences/Experiences';
-import Formations from '@/components/sections/formations/Formations';
-import Presentation from '@/components/sections/presentation/Presentation';
-import Projects from '@/components/sections/projects/Projects';
-import Skills from '@/components/sections/skills/Skills';
-import Card from '@/components/ui/Card';
+import Contact from '@/components/sections/home/contact/Contact';
+import Description from '@/components/sections/home/description/Description';
+import Experiences from '@/components/sections/home/experiences/Experiences';
+import Formations from '@/components/sections/home/formations/Formations';
+import Presentation from '@/components/sections/home/presentation/Presentation';
+import Projects from '@/components/sections/home/projects/Projects';
+import Skills from '@/components/sections/home/skills/Skills';
+import Glass from '@/components/ui/Glass';
 import { getTranslations } from 'next-intl/server';
 
 const HomePage = async () => {
   const t = await getTranslations('home.presentation');
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="py-12 overflow-hidden max-w-sm w-full">
-        <div className="flex flex-col items-center px-2 gap-6">
-          <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
-            <Presentation />
-          </Card>
-          <Card className="max-w-full w-full sm:w-auto bg-radial-[at_50%_0%] from-[#4e1c60]/20 to-[#1b0823]/15">
-            <Description />
-          </Card>
-          <Formations className="max-w-full w-full sm:w-auto" />
-          <Skills />
-          <Experiences className="max-w-full w-full sm:w-auto" />
-          <Card className="max-w-full w-full sm:w-auto">
-            <Projects />
-          </Card>
-          <div className="max-w-full w-full sm:w-auto p-4">
-            <Contact />
-          </div>
-        </div>
-      </div>
+    <div className="relative flex flex-col items-center gap-3 pt-8">
+      <Presentation />
+      <Glass className="m-3 p-3 max-w-md">
+        <Description />
+      </Glass>
+      <Formations />
+      <Skills className="px-3" />
+      <Experiences className="px-3" />
+      <Projects className="px-3" />
+      <Contact className="px-3" />
     </div>
   );
 };

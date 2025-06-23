@@ -1,4 +1,5 @@
 import Card from '@/components/ui/Card';
+import Glass from '@/components/ui/Glass';
 import { FormationType } from '@/models/Formation';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
@@ -16,7 +17,7 @@ const FormationCard: FC<FormationCardProps> = async ({ type }) => {
   const t = await getTranslations(`home.formations.${type}`);
 
   return (
-    <Card className={`bg-radial-[at_50%_0%] ${getColor()}`}>
+    <Glass opacity={20} className="p-4 flex flex-col gap-2">
       <li className="flex flex-col gap-1">
         <div className="flex flex-row justify-start items-center gap-2">
           <div className="relative size-14 shrink-0">
@@ -30,7 +31,7 @@ const FormationCard: FC<FormationCardProps> = async ({ type }) => {
         </p>
         <p className="text-xs text-justify font-normal">{t('description')}</p>
       </li>
-    </Card>
+    </Glass>
   );
 };
 

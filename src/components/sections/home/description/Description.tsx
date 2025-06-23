@@ -5,7 +5,7 @@ const Description = async () => {
 
   return (
     <section className="flex flex-col items-center gap-2">
-      <h2 className="text-2xl">{t('title')}</h2>
+      <h2 className="text-2xl font-bold text-primary dark:text-slate-50">{t('title')}</h2>
       <p className="text-justify text-xs font-normal">{t('content')}</p>
     </section>
   );

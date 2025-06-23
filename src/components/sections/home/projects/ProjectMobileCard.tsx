@@ -1,6 +1,7 @@
 import RightIcon from '@/components/icons/RightIcon';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
+import Glass from '@/components/ui/Glass';
 import { ProjectType } from '@/models/Project';
 import { cn } from '@sglara/cn';
 import { getTranslations } from 'next-intl/server';
@@ -22,7 +23,10 @@ const ProjectMobileCard: FC<ComponentPropsWithoutRef<'li'> & ProjectMobileCardPr
   const t = await getTranslations(`home.projects.content.${project}`);
 
   return (
-    <Card className="p-0">
+    <Glass
+      className="p-0 hover:opacity-100 opacity-80 transition-opacity duration-300"
+      opacity={20}
+    >
       <li className={cn(className)} {...props}>
         <Link
           className="flex flex-row items-center justify-between relative p-6"
@@ -39,7 +43,7 @@ const ProjectMobileCard: FC<ComponentPropsWithoutRef<'li'> & ProjectMobileCardPr
           <RightIcon />
         </Link>
       </li>
-    </Card>
+    </Glass>
   );
 };
 
