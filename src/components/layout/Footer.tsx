@@ -4,7 +4,7 @@ const Footer = async () => {
   const t = await getTranslations('footer');
 
   return (
-    <footer className="absolute bottom-0 w-full font-normal bg-black/20 text-white py-8 flex justify-center items-center">
+    <footer className="w-full font-normal bg-black/20 text-white py-8 flex justify-center items-center">
       <p className="text-sm">{t('copyright')}</p>
     </footer>
   );

@@ -40,9 +40,9 @@ export default async function RootLayout({
       >
         <Background />
         <NextIntlClientProvider messages={messages}>
-          <main className="min-h-screen relative">
+          <main className="min-h-screen relative flex flex-col">
             <Header />
-            {children}
+            <div className="flex-grow">{children}</div>
             <Footer />
           </main>
         </NextIntlClientProvider>
