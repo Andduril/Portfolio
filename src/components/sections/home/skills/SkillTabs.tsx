@@ -7,10 +7,11 @@ import CodeIcon from '@/components/icons/CodeIcon';
 import BriefcaseIcon from '@/components/icons/BriefcaseIcon';
 import ChatBubbleIcon from '@/components/icons/ChatBubbleIcon';
 import AcademicIcon from '@/components/icons/AcademicIcon';
+import IsagriSkillTab from '../../experience/isagri.tsx/isagriSkillTab';
 
 type SkillTabItem = {
   key: Skill;
-  content: ReactElement<typeof SkillTab>;
+  content: ReactElement<typeof SkillTab | typeof IsagriSkillTab>;
 };
 
 type SkillTabsProps = {

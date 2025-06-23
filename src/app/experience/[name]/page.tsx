@@ -1,6 +1,6 @@
 import AmsilabExperience from '@/components/sections/experience/amsilab';
 import CgiExperience from '@/components/sections/experience/cgi';
-import IsagriExperience from '@/components/sections/experience/isagrI';
+import IsagriExperience from '@/components/sections/experience/isagri.tsx/isagrI';
 import { ExperienceType, validExperienceNames } from '@/models/Experience';
 import { GetStaticPaths } from 'next';
 import { getTranslations } from 'next-intl/server';

@@ -161,11 +161,11 @@
             "typescript": "TypeScript",
             "php": "PHP",
             "java": "Java",
-            "python": "Python",
             "csharp": "C#",
             "html": "HTML",
             "css": "CSS",
-            "sql": "SQL"
+            "sql": "SQL",
+            "rust": "Rust"
           }
         },
         "frameworks": {
@@ -239,7 +239,47 @@
       "title": "Mon experience chez",
       "paragraph1": "Spotifarm est une application mobile développée par Isagri, destinée à accompagner les agriculteurs dans la gestion quotidienne de leurs parcelles. L’objectif principal de l’application est de fournir des recommandations précises et personnalisées sur les créneaux météo les plus favorables pour intervenir (traitements, semis, etc.). L’app s’appuie pour cela sur des données météo ultra-localisées et une cartographie fine des exploitations.",
       "paragraph2": "Techniquement, Spotifarm combine géolocalisation, visualisation cartographique et traitement de données en temps réel pour offrir une expérience fluide et utile sur le terrain. L’interface a été pensée pour un usage mobile, avec une UX simple et réactive, adaptée aux contraintes des utilisateurs agricoles. L’application s’inscrit dans un environnement métier exigeant, où la fiabilité, la clarté des informations et la performance sont clés pour la prise de décision.",
-      "contributionsTitle": "Mes contributions"
+      "contributionsTitle": "Mes contributions",
+      "acquiredSKillsParagraph": "Au cours de mon expérience chez Isagri, j'ai acquis de nombreuses compétences techniques et professionnelles. J'ai travaillé sur l'optimisation des performances de l'application, la gestion des données géospatiales et l'amélioration de l'expérience utilisateur. J'ai également appris à collaborer efficacement au sein d'une équipe agile, en utilisant des outils modernes de développement et de gestion de projet.",
+      "skills": {
+        "programmingLanguages": {
+          "title": "Programming Languages",
+          "content": {
+            "javascript": "JavaScript",
+            "typescript": "TypeScript",
+            "csharp": "C#",
+            "sql": "SQL"
+          }
+        },
+        "frameworks": {
+          "title": "Frameworks",
+          "content": {
+            "react": "React",
+            "aspNet": "ASP.NET"
+          }
+        },
+        "softSkills": {
+          "title": "Databases",
+          "content": {
+            "communication": "Communication",
+            "teamwork": "Travail en équipe",
+            "problemSolving": "Résolution de problèmes",
+            "adaptability": "Adaptabilité",
+            "criticalThinking": "Pensée critique"
+          }
+        },
+        "rncp": {
+          "title": "Tools",
+          "content": {
+            "RNCP39490BC01": "RNCP39490BC01",
+            "RNCP39490BC02": "RNCP39490BC02",
+            "RNCP39490BC03": "RNCP39490BC03",
+            "RNCP39490BC04": "RNCP39490BC04",
+            "RNCP39490BC07": "RNCP39490BC07",
+            "RNCP39490BC08": "RNCP39490BC08"
+          }
+        }
+      }
     },
     "amsilab": {
       "title": "AmsiLab"

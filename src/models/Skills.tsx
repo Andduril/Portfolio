@@ -26,6 +26,16 @@ export type SkillsMessages = {
       };
     };
   };
+  experience: {
+    isagri: {
+      skills: {
+        [K in Skill]: {
+          title: string;
+          content: Record<string, string>;
+        };
+      };
+    };
+  };
 };
 
 export const softSkillIcons: Record<string, ReactElement> = {

@@ -24,8 +24,8 @@ const Header: FC<HeaderProps> = ({ theme, lang }) => {
   };
 
   return (
-    <header className="sticky z-50 top-0 w-full">
-      <Glass className="p-2 rounded-none flex flex-row items-center justify-between">
+    <header className="sticky z-50 top-0 w-full bg-white dark:bg-[#0a0a0a]">
+      <div className="p-2 rounded-none flex flex-row items-center justify-between">
         <Link
           href={'/'}
           className="text-md cursor-pointer text-primary dark:text-slate-50 font-bold"
@@ -40,16 +40,7 @@ const Header: FC<HeaderProps> = ({ theme, lang }) => {
             {lang === 'en' ? '🇫🇷' : '🇬🇧'}
           </Glass>
         </div>
-      </Glass>
-
-      {/* <nav className="flex flex-row-reverse gap-2">
-        <button className="cursor-pointer" onClick={handleSetThemeClick}>
-          {theme === 'dark' ? '🌙' : '☀️'}
-        </button>
-        <button className="cursor-pointer" onClick={handleSettingsClick}>
-          {lang === 'en' ? '🇫🇷' : '🇬🇧'}
-        </button>
-      </nav> */}
+      </div>
     </header>
   );
 };

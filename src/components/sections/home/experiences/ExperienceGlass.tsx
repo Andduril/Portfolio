@@ -56,6 +56,12 @@ const ExperienceGlass: FC<ExperienceGlassProps> = ({ type, imagePath }) => {
     setOpen(!open);
   };
 
+  const handleDotClick = (index: number) => {
+    if (sliderInstance) {
+      sliderInstance.current?.moveToIdx(index, true);
+    }
+  };
+
   return (
     <Glass
       opacity={20}
@@ -70,7 +76,7 @@ const ExperienceGlass: FC<ExperienceGlassProps> = ({ type, imagePath }) => {
         {t('startYear')} - {t('endYear')}
       </span>
       <div
-        className={`overflow-hidden flex flex-col items-center max-w-full transition-all duration-500 ease-in-out ${open ? 'max-h-96' : 'max-h-0'}`}
+        className={`overflow-hidden flex flex-col gap-2 items-center max-w-full transition-all duration-500 ease-in-out ${open ? 'max-h-96' : 'max-h-0'}`}
       >
         <div ref={sliderRef} className="keen-slider w-full">
           {techSections.map((section, index) => (
@@ -82,6 +88,16 @@ const ExperienceGlass: FC<ExperienceGlassProps> = ({ type, imagePath }) => {
                 ))}
               </ul>
             </div>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-1 mt-2">
+          {techSections.map((_, i) => (
+            <span
+              key={i}
+              className={`cursor-pointer h-2 w-2 ${slideIndex == i ? 'bg-white' : 'bg-white/30'} rounded-full`}
+              onClick={() => handleDotClick(i)}
+            />
           ))}
         </div>
 

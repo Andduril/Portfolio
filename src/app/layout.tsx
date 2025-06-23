@@ -49,16 +49,19 @@ export default async function RootLayout({
       >
         {/* <Background /> */}
         <NextIntlClientProvider messages={messages}>
-          {/* <Background /> */}
+          <Background />
           <main className="min-h-screen relative flex flex-col">
-            <Glass opacity={20} className="flex-grow relative flex flex-col items-center">
+            <Glass opacity={20} className="flex-grow relative flex flex-col items-center md:hidden">
               <Header theme={theme} lang={locale} />
               <div className="flex-grow max-w-md w-full">{children}</div>
               <Footer className="mt-8" />
             </Glass>
-            {/* <Header theme={theme} lang={locale} /> */}
-            {/* <div className="flex-grow">{children}</div> */}
-            {/* <Footer /> */}
+
+            <div className="hidden flex-grow relative md:flex flex-col items-center">
+              <Header theme={theme} lang={locale} />
+              <div className="flex-grow max-w-md w-full">{children}</div>
+              <Footer className="mt-8" />
+            </div>
           </main>
         </NextIntlClientProvider>
       </body>
