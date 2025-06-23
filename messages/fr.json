@@ -239,7 +239,7 @@
       "title": "Mon experience chez",
       "paragraph1": "Spotifarm est une application mobile développée par Isagri, destinée à accompagner les agriculteurs dans la gestion quotidienne de leurs parcelles. L’objectif principal de l’application est de fournir des recommandations précises et personnalisées sur les créneaux météo les plus favorables pour intervenir (traitements, semis, etc.). L’app s’appuie pour cela sur des données météo ultra-localisées et une cartographie fine des exploitations.",
       "paragraph2": "Techniquement, Spotifarm combine géolocalisation, visualisation cartographique et traitement de données en temps réel pour offrir une expérience fluide et utile sur le terrain. L’interface a été pensée pour un usage mobile, avec une UX simple et réactive, adaptée aux contraintes des utilisateurs agricoles. L’application s’inscrit dans un environnement métier exigeant, où la fiabilité, la clarté des informations et la performance sont clés pour la prise de décision.",
-      "contributionsTitle": "Mes contributions",
+      "acquiredSkillsTitle": "Compétences acquises",
       "acquiredSKillsParagraph": "Au cours de mon expérience chez Isagri, j'ai acquis de nombreuses compétences techniques et professionnelles. J'ai travaillé sur l'optimisation des performances de l'application, la gestion des données géospatiales et l'amélioration de l'expérience utilisateur. J'ai également appris à collaborer efficacement au sein d'une équipe agile, en utilisant des outils modernes de développement et de gestion de projet.",
       "skills": {
         "programmingLanguages": {
@@ -286,6 +286,36 @@
     },
     "cgi": {
       "title": "CGI"
+    }
+  },
+  "projects": {
+    "alistigo": {
+      "title": "Alistigo",
+      "description": "Un projet de gestion de contenu et de médias sociaux, développé avec React et Node.js."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Mon portfolio personnel, construit avec Vue.js et Express, pour présenter mes projets et compétences."
+    },
+    "chatApplication": {
+      "title": "Application de Chat",
+      "description": "Une application de chat en temps réel utilisant WebSocket, Node.js et React."
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Si vous souhaitez me contacter pour discuter d'opportunités professionnelles, de collaborations ou de projets, n'hésitez pas à m'envoyer un message !",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer",
+      "successMessage": "Votre message a été envoyé avec succès !",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+      "nameError": "Veuillez entrer votre nom.",
+      "emailError": "Veuillez entrer une adresse email valide.",
+      "messageError": "Veuillez entrer un message.",
+      "serverError": "Une erreur serveur s'est produite. Veuillez réessayer plus tard."
     }
   },
   "footer": {

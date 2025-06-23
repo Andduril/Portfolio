@@ -9,7 +9,7 @@ const Projects: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ..
   const t = await getTranslations('home.projects');
 
   return (
-    <section className={cn('flex flex-col gap-2', className)} {...props}>
+    <section className={cn('flex flex-col gap-4', className)} {...props}>
       <h2 className="text-2xl text-primary dark:text-slate-50 font-bold text-center">
         {t('title')}
       </h2>

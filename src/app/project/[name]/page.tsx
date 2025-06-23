@@ -1,17 +1,31 @@
+import Alistigo from '@/components/sections/project/alistigo/Alistigo';
+import ChatApplication from '@/components/sections/project/chatApplication/ChatApplication';
+import Portfolio from '@/components/sections/project/portfolio/Portfolio';
+import { ProjectType, validProjectNames } from '@/models/Project';
+import { notFound, redirect } from 'next/navigation';
 import { FC } from 'react';
 
 type PageProps = {
-  params: Promise<{ name: string }>;
+  params: Promise<{ name: ProjectType }>;
 };
 
 const Page: FC<PageProps> = async ({ params }) => {
   const { name } = await params;
 
-  return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-3xl">{name}</h1>
-    </div>
-  );
+  if (!validProjectNames.includes(name)) {
+    redirect('/');
+  }
+
+  switch (name) {
+    case 'alistigo':
+      return <Alistigo />;
+    case 'portfolio':
+      return <Portfolio />;
+    case 'chatApplication':
+      return <ChatApplication />;
+    default:
+      notFound();
+  }
 };
 
 export default Page;

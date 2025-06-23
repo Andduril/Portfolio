@@ -33,12 +33,12 @@ const Header: FC<HeaderProps> = ({ theme, lang }) => {
           {t('title')}
         </Link>
         <div className="flex flex-row gap-1">
-          <Glass opacity={20} className="cursor-pointer px-1" onClick={handleSetThemeClick}>
+          <span className="cursor-pointer px-1" onClick={handleSetThemeClick}>
             {theme === 'dark' ? '🌙' : '☀️'}
-          </Glass>
-          <Glass opacity={20} className="cursor-pointer px-1" onClick={handleSettingsClick}>
+          </span>
+          <span className="cursor-pointer px-1" onClick={handleSettingsClick}>
             {lang === 'en' ? '🇫🇷' : '🇬🇧'}
-          </Glass>
+          </span>
         </div>
       </div>
     </header>

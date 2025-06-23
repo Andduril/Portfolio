@@ -52,7 +52,7 @@ const IsagriExperience = async () => {
       {/* Skills */}
       <Glass className="w-full flex flex-col gap-5 overflow-x-hidden p-2">
         <h3 className="text-lg font-semibold text-primary text-center dark:text-slate-50">
-          Compétences acquise :
+          {t('acquiredSkillsTitle')}
         </h3>
         <p className="text-xs text-justify">{t('acquiredSKillsParagraph')}</p>
         <Glass opacity={30} className="p-2 flex flex-row items-center">
@@ -69,8 +69,6 @@ const IsagriExperience = async () => {
           />
         </Glass>
       </Glass>
-      {/* Rncp */}
-      <div></div>
     </div>
   );
 };

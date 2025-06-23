@@ -1,5 +1,5 @@
-import AmsilabExperience from '@/components/sections/experience/amsilab';
-import CgiExperience from '@/components/sections/experience/cgi';
+import AmsilabExperience from '@/components/sections/experience/amsilab/amsilab';
+import CgiExperience from '@/components/sections/experience/cgi/cgi';
 import IsagriExperience from '@/components/sections/experience/isagri.tsx/isagrI';
 import { ExperienceType, validExperienceNames } from '@/models/Experience';
 import { GetStaticPaths } from 'next';

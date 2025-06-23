@@ -241,7 +241,7 @@
       "title": "My experience at",
       "paragraph1": "Spotifarm is a mobile application developed by Isagri, designed to support farmers in the day-to-day management of their fields. The app’s main goal is to provide accurate and personalized recommendations on the most favorable weather windows for interventions (such as treatments, sowing, etc.). It relies on ultra-localized weather data and detailed mapping of the farms.",
       "paragraph2": "Technically, Spotifarm combines geolocation, map visualization, and real-time data processing to deliver a smooth and practical experience in the field. The interface was designed for mobile use, with a simple and responsive UX tailored to the needs and constraints of agricultural users. The application operates in a demanding professional environment, where reliability, clarity of information, and performance are key to effective decision-making.",
-      "contributionsTitle": "My contributions",
+      "acquiredSkillsTitle": "Skills Developed",
       "acquiredSKillsParagraph": "During my experience at Isagri, I gained a wide range of technical and professional skills. I worked on optimizing application performance, managing geospatial data, and improving the user experience. I also learned to collaborate effectively within an agile team, using modern development and project management tools.",
       "skills": {
         "programmingLanguages": {
@@ -288,6 +288,36 @@
     },
     "cgi": {
       "title": "CGI"
+    }
+  },
+  "projects": {
+    "alistigo": {
+      "title": "Alistigo",
+      "description": "Un projet de gestion de contenu et de médias sociaux, développé avec React et Node.js."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Mon portfolio personnel, construit avec Vue.js et Express, pour présenter mes projets et compétences."
+    },
+    "chatApplication": {
+      "title": "Application de Chat",
+      "description": "Une application de chat en temps réel utilisant WebSocket, Node.js et React."
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Feel free to reach out to me for any inquiries, collaborations, or opportunities. I am always open to discussing new ideas and projects !",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "successMessage": "Your message has been sent successfully!",
+      "errorMessage": "There was an error sending your message. Please try again later.",
+      "nameError": "Please enter your name.",
+      "emailError": "Please enter a valid email address.",
+      "messageError": "Please enter your message.",
+      "serverError": "An error occurred while sending your message. Please try again later."
     }
   },
   "footer": {
