@@ -10,6 +10,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { cookies } from 'next/headers';
 import Glass from '@/components/ui/Glass';
+import UnderConstruct from '@/components/ui/UnderConstruct';
 
 const geistSans = Inter({
   variable: '--font-inter-sans',
@@ -53,13 +54,19 @@ export default async function RootLayout({
           <main className="min-h-screen relative flex flex-col">
             <Glass opacity={20} className="flex-grow relative flex flex-col items-center md:hidden">
               <Header theme={theme} lang={locale} />
-              <div className="flex-grow max-w-md w-full">{children}</div>
+              <div className="flex-grow max-w-md w-full">
+                <UnderConstruct className="px-3" />
+                {children}
+              </div>
               <Footer className="mt-8" />
             </Glass>
 
             <div className="hidden flex-grow relative md:flex flex-col items-center">
               <Header theme={theme} lang={locale} />
-              <div className="flex-grow max-w-md w-full">{children}</div>
+              <div className="flex-grow max-w-md w-full">
+                <UnderConstruct className="px-3" />
+                {children}
+              </div>
               <Footer className="mt-8" />
             </div>
           </main>

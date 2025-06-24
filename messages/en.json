@@ -322,5 +322,9 @@
   },
   "footer": {
     "copyright": "© 2025 Anddy Labrut"
+  },
+  "underConstruction": {
+    "title": "Under Construction",
+    "description": "This page is currently under construction. Please check back later for updates."
   }
 }
