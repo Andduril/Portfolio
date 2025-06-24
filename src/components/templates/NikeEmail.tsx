@@ -41,7 +41,7 @@ export const NikeReceiptEmail: FC<ContactEmailProps> = ({ name, email, message }
           </Row>
         </Section>
         <Hr style={global.hr} />
-        <Section style={message}>
+        <Section style={messageCss}>
           <Img
             src={`${baseUrl}/static/nike-logo.png`}
             width="66"
@@ -351,7 +351,7 @@ const track = {
   },
 };
 
-const message = {
+const messageCss = {
   padding: '40px 74px',
   textAlign: 'center',
 } as React.CSSProperties;
