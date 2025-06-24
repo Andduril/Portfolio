@@ -75,7 +75,7 @@ const ContactForm: FC<ComponentProps<'form'>> = ({ className, ...props }) => {
       </p>
 
       <Button disabled={pending} type="submit">
-        Send
+        {t('button')}
       </Button>
     </form>
   );

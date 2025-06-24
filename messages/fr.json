@@ -306,6 +306,7 @@
     "title": "Contactez-moi",
     "description": "Si vous souhaitez me contacter pour discuter d'opportunités professionnelles, de collaborations ou de projets, n'hésitez pas à m'envoyer un message !",
     "form": {
+      "button": "Envoyer",
       "name": "Nom",
       "email": "Email",
       "message": "Message",

@@ -1,5 +1,6 @@
 'use server';
 
+import NikeReceiptEmail from '@/components/templates/NikeEmail';
 import { Resend } from 'resend';
 import { z } from 'zod';
 
@@ -51,7 +52,13 @@ export const sendEmail = async (
       from: 'no-reply@anddy-labrut.fr',
       to: 'labrut.anddy@gmail.com',
       subject: `Portfolio - Contact from ${validatedFields.data.name}`,
-      html: `<p>Hello from :${formData.get('message')}</p>`,
+      react: (
+        <NikeReceiptEmail
+          name={validatedFields.data.name}
+          message={validatedFields.data.message}
+          email={validatedFields.data.email}
+        />
+      ),
     });
 
     if (response.error) {

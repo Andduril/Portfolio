@@ -308,6 +308,7 @@
     "title": "Contact me",
     "description": "Feel free to reach out to me for any inquiries, collaborations, or opportunities. I am always open to discussing new ideas and projects !",
     "form": {
+      "button": "Send",
       "name": "Name",
       "email": "Email",
       "message": "Message",
