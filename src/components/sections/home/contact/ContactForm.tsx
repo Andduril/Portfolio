@@ -3,7 +3,7 @@
 import { sendEmail, SendEmailIdle } from '@/actions/sendEmail';
 import Button from '@/components/ui/Button';
 import Glass from '@/components/ui/Glass';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { ComponentProps, FC, useActionState } from 'react';

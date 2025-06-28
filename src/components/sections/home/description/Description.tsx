@@ -1,11 +1,13 @@
+import { cn } from '@/utils/cn';
 import { getTranslations } from 'next-intl/server';
+import { ComponentPropsWithRef, FC } from 'react';
 
-const Description = async () => {
+const Description: FC<ComponentPropsWithRef<'section'>> = async ({ className, ...props }) => {
   const t = await getTranslations('home.description');
 
   return (
-    <section className="flex flex-col items-center gap-2">
-      <h2 className="text-2xl font-bold text-primary dark:text-slate-50">{t('title')}</h2>
+    <section className={cn('flex flex-col items-center gap-2', className)} {...props}>
+      <h2 className="text-2xl lg:text-2xl font-bold">{t('title')}</h2>
       <p className="text-justify text-xs font-normal">{t('content')}</p>
     </section>
   );

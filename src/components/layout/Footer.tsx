@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Glass from '../ui/Glass';
 import { ComponentProps, FC } from 'react';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 
 const Footer: FC<ComponentProps<'section'>> = async ({ className, ...props }) => {
   const t = await getTranslations('footer');

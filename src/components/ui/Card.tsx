@@ -1,4 +1,4 @@
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { ComponentPropsWithoutRef, FC, ReactNode } from 'react';
 
 export type CardProps = {

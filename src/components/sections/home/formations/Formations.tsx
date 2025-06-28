@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import FormationCard from './FormationCard';
 import { ComponentPropsWithoutRef, FC } from 'react';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 
 const Formations: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {
   const t = await getTranslations('home.formations');

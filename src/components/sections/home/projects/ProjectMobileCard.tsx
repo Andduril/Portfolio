@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import Glass from '@/components/ui/Glass';
 import { ProjectType } from '@/models/Project';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';

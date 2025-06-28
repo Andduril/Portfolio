@@ -1,4 +1,4 @@
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { ComponentPropsWithoutRef, FC } from 'react';

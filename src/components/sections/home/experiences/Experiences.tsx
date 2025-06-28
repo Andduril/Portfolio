@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { ComponentPropsWithoutRef, FC } from 'react';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import ExperienceGlass from './ExperienceGlass';
 
 const Experiences: FC<ComponentPropsWithoutRef<'section'>> = async ({ className, ...props }) => {

@@ -1,5 +1,5 @@
 import Card from '@/components/ui/Card';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { getTranslations } from 'next-intl/server';
 import { ComponentPropsWithoutRef, FC } from 'react';
 import SkillTabs from './SkillTabs';

@@ -1,4 +1,4 @@
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 import { FC, SVGProps } from 'react';
 
 const CodeIcon: FC<SVGProps<SVGSVGElement>> = ({ className, ...props }) => (

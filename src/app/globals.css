@@ -5,33 +5,37 @@
 @theme {
   --color-font: #fcfcfc;
   --color-card: #212121;
-
   --color-primary: #613fe8;
 }
 
+/* Variables de police et de fond */
 :root {
   --font-sans: var(--font-inter-sans);
   --font-mono: var(--font-mono);
+  --background: #0f172a; /* fond foncé par défaut */
 }
 
-/* width */
+/* Scrollbar personnalisée */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--background);
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Animation utilitaire */
+@keyframes subtleMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
 }

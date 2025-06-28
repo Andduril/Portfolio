@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Glass from './Glass';
 import { ComponentProps, FC } from 'react';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 
 const UnderConstruct: FC<ComponentProps<'div'>> = async ({ className, ...props }) => {
   const t = await getTranslations('underConstruction');

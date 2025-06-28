@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@react-email/components": "^0.1.0",
-    "@sglara/cn": "^1.0.0",
     "clsx": "^2.1.1",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.522.0",
+    "motion": "^12.19.2",
     "next": "^15.2.4",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",

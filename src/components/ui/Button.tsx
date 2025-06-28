@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode, FC } from 'react';
 import { ClassValue } from 'clsx';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 
 type ButtonOnlyProps = {
   href?: undefined;

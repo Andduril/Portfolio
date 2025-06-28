@@ -24,18 +24,15 @@ const Header: FC<HeaderProps> = ({ theme, lang }) => {
   };
 
   return (
-    <header className="sticky z-50 top-0 w-full bg-white dark:bg-[#0a0a0a]">
+    <header className="sticky z-50 top-0 w-full bg-[#0a0b13d3]">
       <div className="p-2 rounded-none flex flex-row items-center justify-between">
-        <Link
-          href={'/'}
-          className="text-md cursor-pointer text-primary dark:text-slate-50 font-bold"
-        >
+        <Link href={'/'} className="text-md cursor-pointer font-bold">
           {t('title')}
         </Link>
         <div className="flex flex-row gap-1">
-          <span className="cursor-pointer px-1" onClick={handleSetThemeClick}>
+          {/* <span className="cursor-pointer px-1" onClick={handleSetThemeClick}>
             {theme === 'dark' ? '🌙' : '☀️'}
-          </span>
+          </span> */}
           <span className="cursor-pointer px-1" onClick={handleSettingsClick}>
             {lang === 'en' ? '🇫🇷' : '🇬🇧'}
           </span>

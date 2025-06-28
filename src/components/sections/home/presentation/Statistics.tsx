@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import StatisticCard from './StatisticCard';
 import { ComponentProps, FC } from 'react';
-import { cn } from '@sglara/cn';
+import { cn } from '@/utils/cn';
 
 const Statistics: FC<ComponentProps<'ul'>> = async ({ className, ...props }) => {
   const t = await getTranslations('home.presentation.statistics');
