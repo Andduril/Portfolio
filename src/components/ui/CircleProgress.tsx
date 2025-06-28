@@ -13,7 +13,7 @@ type CircleProgressProps = {
   strokeWidth?: number;
   duration?: number;
   delay?: number;
-  strokeColor: ClassValue;
+  strokeColor?: ClassValue;
 } & MotionProps &
   ComponentPropsWithRef<'div'>;
 
@@ -24,7 +24,7 @@ const CircleProgress: FC<CircleProgressProps> = ({
   strokeWidth = 10,
   duration = 2,
   delay = 0,
-  strokeColor,
+  strokeColor = 'stroke-blue-500',
   className,
   ...props
 }) => {
